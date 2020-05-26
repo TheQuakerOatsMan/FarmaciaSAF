@@ -1,0 +1,758 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AD590B77-184E-4E34-90FB-C5FD4046A437}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>FarmaciaSanAntonio.My.MyApplication</StartupObject>
+    <RootNamespace>FarmaciaSanAntonio</RootNamespace>
+    <AssemblyName>FarmaciaSanAntonio</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>FarmaciaSanAntonio.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>FarmaciaSanAntonio.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="ADODB" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Compras_Gnral.Designer.vb">
+      <DependentUpon>Compras_Gnral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Compras_Gnral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="confirmEmpComp.Designer.vb">
+      <DependentUpon>confirmEmpComp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="confirmEmpComp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DECOMPRASGERENCIA.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DECOMPRASGERENCIA.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DECOMPRASP.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DECOMPRASP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="detcommed.Designer.vb">
+      <DependentUpon>detcommed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="detcommed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="detcompro.Designer.vb">
+      <DependentUpon>detcompro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="detcompro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="detvmed.Designer.vb">
+      <DependentUpon>detvmed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="detvmed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="detvtapro.Designer.vb">
+      <DependentUpon>detvtapro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="detvtapro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DEVENTAS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DEVENTAS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DEVENTASP.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DEVENTASP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="empleados_gnral.Designer.vb">
+      <DependentUpon>empleados_gnral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="empleados_gnral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FarmSAntonioComprasDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FarmSAntonioComprasDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FarmSAntonioDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FarmSAntonioDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FarmSAntonioDataSet10.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FarmSAntonioDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FarmSAntonioDataSet11.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FarmSAntonioDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FarmSAntonioDataSet12.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FarmSAntonioDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FarmSAntonioDataSet12.vb">
+      <DependentUpon>FarmSAntonioDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FarmSAntonioDataSet13.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FarmSAntonioDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FarmSAntonioDataSet14.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FarmSAntonioDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FarmSAntonioDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FarmSAntonioDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FarmSAntonioDataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FarmSAntonioDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FarmSAntonioDataSet6.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FarmSAntonioDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FarmSAntonioDataSet7.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FarmSAntonioDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FarmSAntonioDataSet8.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FarmSAntonioDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FarmSAntonioDataSet9.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FarmSAntonioDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FarmSAntonioVentasDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FarmSAntonioVentasDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FarmSAntonioVentasDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FarmSAntonioVentasDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FarmSAntonioVentasDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FarmSAntonioVentasDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FarmSAntonioVentasDataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FarmSAntonioVentasDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FarmSAntonioVentasDataSet4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FarmSAntonioVentasDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FarmSAntonioVentasDataVTAMED.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FarmSAntonioVentasDataVTAMED.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modEmpleados.Designer.vb">
+      <DependentUpon>modEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="modEmpleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODIMGRECT.Designer.vb">
+      <DependentUpon>MODIMGRECT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODIMGRECT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modProveedores.Designer.vb">
+      <DependentUpon>modProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="modProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="NewCompra.Designer.vb">
+      <DependentUpon>NewCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewVenta.Designer.vb">
+      <DependentUpon>NewVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="confirmEmp.Designer.vb">
+      <DependentUpon>confirmEmp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="confirmEmp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="empleados.Designer.vb">
+      <DependentUpon>empleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="empleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FarmSAntonioDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FarmSAntonioDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inicio.Designer.vb">
+      <DependentUpon>inicio.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicamentos_gnral.Designer.vb">
+      <DependentUpon>Medicamentos_gnral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Medicamentos_gnral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuprin.Designer.vb">
+      <DependentUpon>menuprin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="menuprin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modulo.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ProductosGral.Designer.vb">
+      <DependentUpon>ProductosGral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductosGral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="proveedores.Designer.vb">
+      <DependentUpon>proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="proveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="proveedores_gral.Designer.vb">
+      <DependentUpon>proveedores_gral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="proveedores_gral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProxCad.Designer.vb">
+      <DependentUpon>ProxCad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProxCad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TodasCompras.Designer.vb">
+      <DependentUpon>TodasCompras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TodasCompras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TodasVentas.Designer.vb">
+      <DependentUpon>TodasVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TodasVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TodosMed.Designer.vb">
+      <DependentUpon>TodosMed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TodosMed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TodosProd.Designer.vb">
+      <DependentUpon>TodosProd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TodosProd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas_Gnral.Designer.vb">
+      <DependentUpon>Ventas_Gnral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas_Gnral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Compras_Gnral.resx">
+      <DependentUpon>Compras_Gnral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="confirmEmpComp.resx">
+      <DependentUpon>confirmEmpComp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="detcommed.resx">
+      <DependentUpon>detcommed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="detcompro.resx">
+      <DependentUpon>detcompro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="detvmed.resx">
+      <DependentUpon>detvmed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="detvtapro.resx">
+      <DependentUpon>detvtapro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="empleados_gnral.resx">
+      <DependentUpon>empleados_gnral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modEmpleados.resx">
+      <DependentUpon>modEmpleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODIMGRECT.resx">
+      <DependentUpon>MODIMGRECT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modProveedores.resx">
+      <DependentUpon>modProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewCompra.resx">
+      <DependentUpon>NewCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewVenta.resx">
+      <DependentUpon>NewVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="confirmEmp.resx">
+      <DependentUpon>confirmEmp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="empleados.resx">
+      <DependentUpon>empleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inicio.resx">
+      <DependentUpon>inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicamentos_gnral.resx">
+      <DependentUpon>Medicamentos_gnral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuprin.resx">
+      <DependentUpon>menuprin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductosGral.resx">
+      <DependentUpon>ProductosGral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="proveedores.resx">
+      <DependentUpon>proveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="proveedores_gral.resx">
+      <DependentUpon>proveedores_gral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProxCad.resx">
+      <DependentUpon>ProxCad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TodasCompras.resx">
+      <DependentUpon>TodasCompras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TodasVentas.resx">
+      <DependentUpon>TodasVentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TodosMed.resx">
+      <DependentUpon>TodosMed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TodosProd.resx">
+      <DependentUpon>TodosProd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas_Gnral.resx">
+      <DependentUpon>Ventas_Gnral.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DECOMPRASGERENCIA.xsc">
+      <DependentUpon>DECOMPRASGERENCIA.xsd</DependentUpon>
+    </None>
+    <None Include="DECOMPRASGERENCIA.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DECOMPRASGERENCIA.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DECOMPRASGERENCIA.xss">
+      <DependentUpon>DECOMPRASGERENCIA.xsd</DependentUpon>
+    </None>
+    <None Include="DECOMPRASP.xsc">
+      <DependentUpon>DECOMPRASP.xsd</DependentUpon>
+    </None>
+    <None Include="DECOMPRASP.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DECOMPRASP.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DECOMPRASP.xss">
+      <DependentUpon>DECOMPRASP.xsd</DependentUpon>
+    </None>
+    <None Include="DEVENTAS.xsc">
+      <DependentUpon>DEVENTAS.xsd</DependentUpon>
+    </None>
+    <None Include="DEVENTAS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DEVENTAS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DEVENTAS.xss">
+      <DependentUpon>DEVENTAS.xsd</DependentUpon>
+    </None>
+    <None Include="DEVENTASP.xsc">
+      <DependentUpon>DEVENTASP.xsd</DependentUpon>
+    </None>
+    <None Include="DEVENTASP.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DEVENTASP.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DEVENTASP.xss">
+      <DependentUpon>DEVENTASP.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioComprasDataSet.xsc">
+      <DependentUpon>FarmSAntonioComprasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioComprasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FarmSAntonioComprasDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FarmSAntonioComprasDataSet.xss">
+      <DependentUpon>FarmSAntonioComprasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioDataSet.xsc">
+      <DependentUpon>FarmSAntonioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FarmSAntonioDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FarmSAntonioDataSet.xss">
+      <DependentUpon>FarmSAntonioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioDataSet1.xsc">
+      <DependentUpon>FarmSAntonioDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FarmSAntonioDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FarmSAntonioDataSet1.xss">
+      <DependentUpon>FarmSAntonioDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioDataSet10.xsc">
+      <DependentUpon>FarmSAntonioDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FarmSAntonioDataSet10.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FarmSAntonioDataSet10.xss">
+      <DependentUpon>FarmSAntonioDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioDataSet11.xsc">
+      <DependentUpon>FarmSAntonioDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FarmSAntonioDataSet11.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FarmSAntonioDataSet11.xss">
+      <DependentUpon>FarmSAntonioDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioDataSet12.xsc">
+      <DependentUpon>FarmSAntonioDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FarmSAntonioDataSet12.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FarmSAntonioDataSet12.xss">
+      <DependentUpon>FarmSAntonioDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioDataSet13.xsc">
+      <DependentUpon>FarmSAntonioDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FarmSAntonioDataSet13.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FarmSAntonioDataSet13.xss">
+      <DependentUpon>FarmSAntonioDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioDataSet14.xsc">
+      <DependentUpon>FarmSAntonioDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FarmSAntonioDataSet14.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FarmSAntonioDataSet14.xss">
+      <DependentUpon>FarmSAntonioDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioDataSet2.xsc">
+      <DependentUpon>FarmSAntonioDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FarmSAntonioDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FarmSAntonioDataSet2.xss">
+      <DependentUpon>FarmSAntonioDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioDataSet3.xsc">
+      <DependentUpon>FarmSAntonioDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FarmSAntonioDataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FarmSAntonioDataSet3.xss">
+      <DependentUpon>FarmSAntonioDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioDataSet6.xsc">
+      <DependentUpon>FarmSAntonioDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FarmSAntonioDataSet6.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FarmSAntonioDataSet6.xss">
+      <DependentUpon>FarmSAntonioDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioDataSet7.xsc">
+      <DependentUpon>FarmSAntonioDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FarmSAntonioDataSet7.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FarmSAntonioDataSet7.xss">
+      <DependentUpon>FarmSAntonioDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioDataSet8.xsc">
+      <DependentUpon>FarmSAntonioDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FarmSAntonioDataSet8.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FarmSAntonioDataSet8.xss">
+      <DependentUpon>FarmSAntonioDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioDataSet9.xsc">
+      <DependentUpon>FarmSAntonioDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FarmSAntonioDataSet9.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FarmSAntonioDataSet9.xss">
+      <DependentUpon>FarmSAntonioDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioVentasDataSet.xsc">
+      <DependentUpon>FarmSAntonioVentasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioVentasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FarmSAntonioVentasDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FarmSAntonioVentasDataSet.xss">
+      <DependentUpon>FarmSAntonioVentasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioVentasDataSet1.xsc">
+      <DependentUpon>FarmSAntonioVentasDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioVentasDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FarmSAntonioVentasDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FarmSAntonioVentasDataSet1.xss">
+      <DependentUpon>FarmSAntonioVentasDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioVentasDataSet2.xsc">
+      <DependentUpon>FarmSAntonioVentasDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioVentasDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FarmSAntonioVentasDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FarmSAntonioVentasDataSet2.xss">
+      <DependentUpon>FarmSAntonioVentasDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioVentasDataSet3.xsc">
+      <DependentUpon>FarmSAntonioVentasDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioVentasDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FarmSAntonioVentasDataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FarmSAntonioVentasDataSet3.xss">
+      <DependentUpon>FarmSAntonioVentasDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioVentasDataSet4.xsc">
+      <DependentUpon>FarmSAntonioVentasDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioVentasDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FarmSAntonioVentasDataSet4.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FarmSAntonioVentasDataSet4.xss">
+      <DependentUpon>FarmSAntonioVentasDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioVentasDataVTAMED.xsc">
+      <DependentUpon>FarmSAntonioVentasDataVTAMED.xsd</DependentUpon>
+    </None>
+    <None Include="FarmSAntonioVentasDataVTAMED.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FarmSAntonioVentasDataVTAMED.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FarmSAntonioVentasDataVTAMED.xss">
+      <DependentUpon>FarmSAntonioVentasDataVTAMED.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\farmacia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pharmacy-background-with-doctor-holding-a-medicine-bag-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\far.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

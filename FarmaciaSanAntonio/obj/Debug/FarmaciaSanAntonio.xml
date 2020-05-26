@@ -1,0 +1,1636 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+FarmaciaSanAntonio
+</name>
+</assembly>
+<members>
+<member name="T:FarmaciaSanAntonio.My.Resources.Resources">
+<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+<member name="P:FarmaciaSanAntonio.My.Resources.Resources.ResourceManager">
+<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member>
+<member name="P:FarmaciaSanAntonio.My.Resources.Resources.Culture">
+<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member>
+<member name="P:FarmaciaSanAntonio.My.Resources.Resources.far">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FarmaciaSanAntonio.My.Resources.Resources.pharmacy_background_with_doctor_holding_a_medicine_bag_vector">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DECOMPRASGERENCIA">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DECOMPRASGERENCIA.MEDICAMENTOSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DECOMPRASGERENCIA.MEDICAMENTOSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DECOMPRASGERENCIA.MEDICAMENTOSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DECOMPRASGERENCIATableAdapters.MEDICAMENTOSTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DECOMPRASGERENCIATableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.DECOMPRASGERENCIATableAdapters.TableAdapterManager.UpdateUpdatedRows(FarmaciaSanAntonio.DECOMPRASGERENCIA,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.DECOMPRASGERENCIATableAdapters.TableAdapterManager.UpdateInsertedRows(FarmaciaSanAntonio.DECOMPRASGERENCIA,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.DECOMPRASGERENCIATableAdapters.TableAdapterManager.UpdateDeletedRows(FarmaciaSanAntonio.DECOMPRASGERENCIA,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.DECOMPRASGERENCIATableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.DECOMPRASGERENCIATableAdapters.TableAdapterManager.UpdateAll(FarmaciaSanAntonio.DECOMPRASGERENCIA)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DECOMPRASGERENCIATableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DECOMPRASGERENCIATableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DECOMPRASP">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DECOMPRASP.PRODUCTOSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DECOMPRASP.PRODUCTOSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DECOMPRASP.PRODUCTOSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DECOMPRASPTableAdapters.PRODUCTOSTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DECOMPRASPTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.DECOMPRASPTableAdapters.TableAdapterManager.UpdateUpdatedRows(FarmaciaSanAntonio.DECOMPRASP,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.DECOMPRASPTableAdapters.TableAdapterManager.UpdateInsertedRows(FarmaciaSanAntonio.DECOMPRASP,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.DECOMPRASPTableAdapters.TableAdapterManager.UpdateDeletedRows(FarmaciaSanAntonio.DECOMPRASP,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.DECOMPRASPTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.DECOMPRASPTableAdapters.TableAdapterManager.UpdateAll(FarmaciaSanAntonio.DECOMPRASP)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DECOMPRASPTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DECOMPRASPTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DEVENTAS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DEVENTAS.MEDICAMENTOSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DEVENTAS.MEDICAMENTOSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DEVENTAS.MEDICAMENTOSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DEVENTASTableAdapters.MEDICAMENTOSTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DEVENTASTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.DEVENTASTableAdapters.TableAdapterManager.UpdateUpdatedRows(FarmaciaSanAntonio.DEVENTAS,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.DEVENTASTableAdapters.TableAdapterManager.UpdateInsertedRows(FarmaciaSanAntonio.DEVENTAS,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.DEVENTASTableAdapters.TableAdapterManager.UpdateDeletedRows(FarmaciaSanAntonio.DEVENTAS,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.DEVENTASTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.DEVENTASTableAdapters.TableAdapterManager.UpdateAll(FarmaciaSanAntonio.DEVENTAS)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DEVENTASTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DEVENTASTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DEVENTASP">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DEVENTASP.PRODUCTOSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DEVENTASP.PRODUCTOSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DEVENTASP.PRODUCTOSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DEVENTASPTableAdapters.PRODUCTOSTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DEVENTASPTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.DEVENTASPTableAdapters.TableAdapterManager.UpdateUpdatedRows(FarmaciaSanAntonio.DEVENTASP,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.DEVENTASPTableAdapters.TableAdapterManager.UpdateInsertedRows(FarmaciaSanAntonio.DEVENTASP,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.DEVENTASPTableAdapters.TableAdapterManager.UpdateDeletedRows(FarmaciaSanAntonio.DEVENTASP,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.DEVENTASPTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.DEVENTASPTableAdapters.TableAdapterManager.UpdateAll(FarmaciaSanAntonio.DEVENTASP)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DEVENTASPTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.DEVENTASPTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioComprasDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioComprasDataSet.COMPRASDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioComprasDataSet.COMPRASRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioComprasDataSet.COMPRASRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioComprasDataSetTableAdapters.COMPRASTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioComprasDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioComprasDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(FarmaciaSanAntonio.FarmSAntonioComprasDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioComprasDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(FarmaciaSanAntonio.FarmSAntonioComprasDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioComprasDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(FarmaciaSanAntonio.FarmSAntonioComprasDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioComprasDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioComprasDataSetTableAdapters.TableAdapterManager.UpdateAll(FarmaciaSanAntonio.FarmSAntonioComprasDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioComprasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioComprasDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet.PROVEEDORESDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet.PROVEEDORESRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet.PROVEEDORESRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSetTableAdapters.PROVEEDORESTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(FarmaciaSanAntonio.FarmSAntonioDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(FarmaciaSanAntonio.FarmSAntonioDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(FarmaciaSanAntonio.FarmSAntonioDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSetTableAdapters.TableAdapterManager.UpdateAll(FarmaciaSanAntonio.FarmSAntonioDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet10">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet10.MEDICAMENTOSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet10.MEDICAMENTOSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet10.MEDICAMENTOSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet10TableAdapters.MEDICAMENTOSTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet10TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet10TableAdapters.TableAdapterManager.UpdateUpdatedRows(FarmaciaSanAntonio.FarmSAntonioDataSet10,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet10TableAdapters.TableAdapterManager.UpdateInsertedRows(FarmaciaSanAntonio.FarmSAntonioDataSet10,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet10TableAdapters.TableAdapterManager.UpdateDeletedRows(FarmaciaSanAntonio.FarmSAntonioDataSet10,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet10TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet10TableAdapters.TableAdapterManager.UpdateAll(FarmaciaSanAntonio.FarmSAntonioDataSet10)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet10TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet10TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet11">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet11.COMPRASDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet11.COMPRASRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet11.COMPRASRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet11TableAdapters.COMPRASTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet11TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet11TableAdapters.TableAdapterManager.UpdateUpdatedRows(FarmaciaSanAntonio.FarmSAntonioDataSet11,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet11TableAdapters.TableAdapterManager.UpdateInsertedRows(FarmaciaSanAntonio.FarmSAntonioDataSet11,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet11TableAdapters.TableAdapterManager.UpdateDeletedRows(FarmaciaSanAntonio.FarmSAntonioDataSet11,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet11TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet11TableAdapters.TableAdapterManager.UpdateAll(FarmaciaSanAntonio.FarmSAntonioDataSet11)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet11TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet11TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet12">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet12.CADUCIDADDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet12.COMPRASDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet12.MEDICAMENTOSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet12.CADUCIDADRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet12.COMPRASRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet12.MEDICAMENTOSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet12.CADUCIDADRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet12.COMPRASRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet12.MEDICAMENTOSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet12TableAdapters.CADUCIDADTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet12TableAdapters.COMPRASTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet12TableAdapters.MEDICAMENTOSTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet12TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet12TableAdapters.TableAdapterManager.UpdateUpdatedRows(FarmaciaSanAntonio.FarmSAntonioDataSet12,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet12TableAdapters.TableAdapterManager.UpdateInsertedRows(FarmaciaSanAntonio.FarmSAntonioDataSet12,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet12TableAdapters.TableAdapterManager.UpdateDeletedRows(FarmaciaSanAntonio.FarmSAntonioDataSet12,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet12TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet12TableAdapters.TableAdapterManager.UpdateAll(FarmaciaSanAntonio.FarmSAntonioDataSet12)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet12TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet12TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet13">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet13.MEDICAMENTOSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet13.MEDICAMENTOSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet13.MEDICAMENTOSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet13TableAdapters.MEDICAMENTOSTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet13TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet13TableAdapters.TableAdapterManager.UpdateUpdatedRows(FarmaciaSanAntonio.FarmSAntonioDataSet13,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet13TableAdapters.TableAdapterManager.UpdateInsertedRows(FarmaciaSanAntonio.FarmSAntonioDataSet13,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet13TableAdapters.TableAdapterManager.UpdateDeletedRows(FarmaciaSanAntonio.FarmSAntonioDataSet13,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet13TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet13TableAdapters.TableAdapterManager.UpdateAll(FarmaciaSanAntonio.FarmSAntonioDataSet13)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet13TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet13TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet14">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet14.PRODUCTOSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet14.PRODUCTOSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet14.PRODUCTOSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet14TableAdapters.PRODUCTOSTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet14TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet14TableAdapters.TableAdapterManager.UpdateUpdatedRows(FarmaciaSanAntonio.FarmSAntonioDataSet14,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet14TableAdapters.TableAdapterManager.UpdateInsertedRows(FarmaciaSanAntonio.FarmSAntonioDataSet14,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet14TableAdapters.TableAdapterManager.UpdateDeletedRows(FarmaciaSanAntonio.FarmSAntonioDataSet14,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet14TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet14TableAdapters.TableAdapterManager.UpdateAll(FarmaciaSanAntonio.FarmSAntonioDataSet14)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet14TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet14TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet2">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet2.MEDICAMENTOSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet2.MEDICAMENTOSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet2.MEDICAMENTOSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet2TableAdapters.MEDICAMENTOSTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet2TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet2TableAdapters.TableAdapterManager.UpdateUpdatedRows(FarmaciaSanAntonio.FarmSAntonioDataSet2,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet2TableAdapters.TableAdapterManager.UpdateInsertedRows(FarmaciaSanAntonio.FarmSAntonioDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet2TableAdapters.TableAdapterManager.UpdateDeletedRows(FarmaciaSanAntonio.FarmSAntonioDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet2TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet2TableAdapters.TableAdapterManager.UpdateAll(FarmaciaSanAntonio.FarmSAntonioDataSet2)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet2TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet2TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet3">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet3.PRODUCTOSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet3.PRODUCTOSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet3.PRODUCTOSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet3TableAdapters.PRODUCTOSTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet3TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet3TableAdapters.TableAdapterManager.UpdateUpdatedRows(FarmaciaSanAntonio.FarmSAntonioDataSet3,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet3TableAdapters.TableAdapterManager.UpdateInsertedRows(FarmaciaSanAntonio.FarmSAntonioDataSet3,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet3TableAdapters.TableAdapterManager.UpdateDeletedRows(FarmaciaSanAntonio.FarmSAntonioDataSet3,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet3TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet3TableAdapters.TableAdapterManager.UpdateAll(FarmaciaSanAntonio.FarmSAntonioDataSet3)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet3TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet3TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet6">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet6.PROVEEDORESDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet6.PROVEEDORESRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet6.PROVEEDORESRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet6TableAdapters.PROVEEDORESTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet6TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet6TableAdapters.TableAdapterManager.UpdateUpdatedRows(FarmaciaSanAntonio.FarmSAntonioDataSet6,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet6TableAdapters.TableAdapterManager.UpdateInsertedRows(FarmaciaSanAntonio.FarmSAntonioDataSet6,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet6TableAdapters.TableAdapterManager.UpdateDeletedRows(FarmaciaSanAntonio.FarmSAntonioDataSet6,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet6TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet6TableAdapters.TableAdapterManager.UpdateAll(FarmaciaSanAntonio.FarmSAntonioDataSet6)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet6TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet6TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet7">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet7.EMPLEADOSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet7.EMPLEADOSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet7.EMPLEADOSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet7TableAdapters.EMPLEADOSTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet7TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet7TableAdapters.TableAdapterManager.UpdateUpdatedRows(FarmaciaSanAntonio.FarmSAntonioDataSet7,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet7TableAdapters.TableAdapterManager.UpdateInsertedRows(FarmaciaSanAntonio.FarmSAntonioDataSet7,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet7TableAdapters.TableAdapterManager.UpdateDeletedRows(FarmaciaSanAntonio.FarmSAntonioDataSet7,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet7TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet7TableAdapters.TableAdapterManager.UpdateAll(FarmaciaSanAntonio.FarmSAntonioDataSet7)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet7TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet7TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet8">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet8.PRODUCTOSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet8.PRODUCTOSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet8.PRODUCTOSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet8TableAdapters.PRODUCTOSTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet8TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet8TableAdapters.TableAdapterManager.UpdateUpdatedRows(FarmaciaSanAntonio.FarmSAntonioDataSet8,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet8TableAdapters.TableAdapterManager.UpdateInsertedRows(FarmaciaSanAntonio.FarmSAntonioDataSet8,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet8TableAdapters.TableAdapterManager.UpdateDeletedRows(FarmaciaSanAntonio.FarmSAntonioDataSet8,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet8TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet8TableAdapters.TableAdapterManager.UpdateAll(FarmaciaSanAntonio.FarmSAntonioDataSet8)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet8TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet8TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet9">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet9.VENTASDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet9.VENTASRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet9.VENTASRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet9TableAdapters.VENTASTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet9TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet9TableAdapters.TableAdapterManager.UpdateUpdatedRows(FarmaciaSanAntonio.FarmSAntonioDataSet9,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet9TableAdapters.TableAdapterManager.UpdateInsertedRows(FarmaciaSanAntonio.FarmSAntonioDataSet9,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet9TableAdapters.TableAdapterManager.UpdateDeletedRows(FarmaciaSanAntonio.FarmSAntonioDataSet9,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet9TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet9TableAdapters.TableAdapterManager.UpdateAll(FarmaciaSanAntonio.FarmSAntonioDataSet9)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet9TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet9TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet.VENTASDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet.VENTASRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet.VENTASRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSetTableAdapters.VENTASTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(FarmaciaSanAntonio.FarmSAntonioVentasDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(FarmaciaSanAntonio.FarmSAntonioVentasDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(FarmaciaSanAntonio.FarmSAntonioVentasDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataSetTableAdapters.TableAdapterManager.UpdateAll(FarmaciaSanAntonio.FarmSAntonioVentasDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet1.PRODUCTOSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet1.PRODUCTOSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet1.PRODUCTOSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet1TableAdapters.PRODUCTOSTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet1TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(FarmaciaSanAntonio.FarmSAntonioVentasDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(FarmaciaSanAntonio.FarmSAntonioVentasDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(FarmaciaSanAntonio.FarmSAntonioVentasDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataSet1TableAdapters.TableAdapterManager.UpdateAll(FarmaciaSanAntonio.FarmSAntonioVentasDataSet1)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet2">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet2.PRODUCTOSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet2.PRODUCTOSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet2.PRODUCTOSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet2TableAdapters.PRODUCTOSTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet2TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataSet2TableAdapters.TableAdapterManager.UpdateUpdatedRows(FarmaciaSanAntonio.FarmSAntonioVentasDataSet2,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataSet2TableAdapters.TableAdapterManager.UpdateInsertedRows(FarmaciaSanAntonio.FarmSAntonioVentasDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataSet2TableAdapters.TableAdapterManager.UpdateDeletedRows(FarmaciaSanAntonio.FarmSAntonioVentasDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataSet2TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataSet2TableAdapters.TableAdapterManager.UpdateAll(FarmaciaSanAntonio.FarmSAntonioVentasDataSet2)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet2TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet2TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet3">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet3.MEDICAMENTOSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet3.MEDICAMENTOSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet3.MEDICAMENTOSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet3TableAdapters.MEDICAMENTOSTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet3TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataSet3TableAdapters.TableAdapterManager.UpdateUpdatedRows(FarmaciaSanAntonio.FarmSAntonioVentasDataSet3,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataSet3TableAdapters.TableAdapterManager.UpdateInsertedRows(FarmaciaSanAntonio.FarmSAntonioVentasDataSet3,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataSet3TableAdapters.TableAdapterManager.UpdateDeletedRows(FarmaciaSanAntonio.FarmSAntonioVentasDataSet3,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataSet3TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataSet3TableAdapters.TableAdapterManager.UpdateAll(FarmaciaSanAntonio.FarmSAntonioVentasDataSet3)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet3TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet3TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet4">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet4.EMPLEADOSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet4.EMPLEADOSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet4.EMPLEADOSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet4TableAdapters.EMPLEADOSTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet4TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataSet4TableAdapters.TableAdapterManager.UpdateUpdatedRows(FarmaciaSanAntonio.FarmSAntonioVentasDataSet4,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataSet4TableAdapters.TableAdapterManager.UpdateInsertedRows(FarmaciaSanAntonio.FarmSAntonioVentasDataSet4,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataSet4TableAdapters.TableAdapterManager.UpdateDeletedRows(FarmaciaSanAntonio.FarmSAntonioVentasDataSet4,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataSet4TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataSet4TableAdapters.TableAdapterManager.UpdateAll(FarmaciaSanAntonio.FarmSAntonioVentasDataSet4)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet4TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataSet4TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataVTAMED">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataVTAMED.MEDICAMENTOSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataVTAMED.MEDICAMENTOSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataVTAMED.MEDICAMENTOSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataVTAMEDTableAdapters.MEDICAMENTOSTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataVTAMEDTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataVTAMEDTableAdapters.TableAdapterManager.UpdateUpdatedRows(FarmaciaSanAntonio.FarmSAntonioVentasDataVTAMED,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataVTAMEDTableAdapters.TableAdapterManager.UpdateInsertedRows(FarmaciaSanAntonio.FarmSAntonioVentasDataVTAMED,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataVTAMEDTableAdapters.TableAdapterManager.UpdateDeletedRows(FarmaciaSanAntonio.FarmSAntonioVentasDataVTAMED,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataVTAMEDTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioVentasDataVTAMEDTableAdapters.TableAdapterManager.UpdateAll(FarmaciaSanAntonio.FarmSAntonioVentasDataVTAMED)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataVTAMEDTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioVentasDataVTAMEDTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet1.PROVEEDORESDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet1.PROVEEDORESRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet1.PROVEEDORESRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet1TableAdapters.PROVEEDORESTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet1TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(FarmaciaSanAntonio.FarmSAntonioDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(FarmaciaSanAntonio.FarmSAntonioDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(FarmaciaSanAntonio.FarmSAntonioDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:FarmaciaSanAntonio.FarmSAntonioDataSet1TableAdapters.TableAdapterManager.UpdateAll(FarmaciaSanAntonio.FarmSAntonioDataSet1)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:FarmaciaSanAntonio.FarmSAntonioDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>
