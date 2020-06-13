@@ -35,10 +35,6 @@
                 Call DMyP()
                 ALTASToolStripMenuItem1.Visible = False
                 MODEMPLEADOSToolStripMenuItem.Visible = False
-                empleados.btnBajaTP.Visible = False
-                empleados.btnRP.Visible = False
-                empleados.btnEEmp.Visible = False
-                empleados.btnModP.Visible = False
             End If
         End If
 
@@ -200,6 +196,13 @@
         empleados.btnRP.Visible = True
         empleados.btnBajaTP.Visible = True
         empleados.btnEEmp.Visible = True
+        If tipoPueso = 5 Then 'ENCARGADO'
+            empleados.btninsertar.Enabled = False
+            empleados.btnEEmp.Enabled = False
+            empleados.btnBajaTP.Enabled = False
+            empleados.btnModP.Enabled = False
+            empleados.btnRP.Enabled = False
+        End If
     End Sub
 
     Private Sub CONSULTAGRALToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CONSULTAGRALToolStripMenuItem.Click
