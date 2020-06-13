@@ -5,6 +5,11 @@
             VENTASToolStripMenuItem.Visible = False
             EMPLEADOSToolStripMenuItem.Visible = False
             Call DMyP()
+            If (tipoPueso = 4) Then
+                Compras_Gnral.DETALLEMED.Enabled = False
+                Compras_Gnral.elimP.Enabled = False
+                Compras_Gnral.ELIMINA.Enabled = False
+            End If
         End If
         If (depa = "VENTAS") Then
             PROVEEDORESToolStripMenuItem.Visible = False
@@ -25,6 +30,18 @@
             empleados.btnRP.Enabled = False
 
         End If
+        If (depa = "GERENCIA") Then
+            If (tipoPueso = 5) Then 'ENCARGADO DE TIENDA'
+                Call DMyP()
+                ALTASToolStripMenuItem1.Visible = False
+                MODEMPLEADOSToolStripMenuItem.Visible = False
+                empleados.btnBajaTP.Visible = False
+                empleados.btnRP.Visible = False
+                empleados.btnEEmp.Visible = False
+                empleados.btnModP.Visible = False
+            End If
+        End If
+
     End Sub
     Public Sub DMyP()
         AltasToolStripMenuItem2.Visible = False
@@ -446,6 +463,10 @@
     End Sub
 
     Private Sub VENTASToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VENTASToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub EMPLEADOSToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EMPLEADOSToolStripMenuItem.Click
 
     End Sub
 End Class

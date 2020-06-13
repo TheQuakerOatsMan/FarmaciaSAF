@@ -169,7 +169,7 @@
         If CVEMP.SelectedItem = 0 Then
             MsgBox("INGRESA UNA CLAVE")
         Else
-            consulta3 = conexionv.Execute("select * from empleados where cvemp=" & CVEMP.Text)
+            consulta3 = conexionv.Execute("select empleados.cvemp, empleados.NOMEMP, empleados.DIREMP, empleados.CORREOEMP, empleados.TELEMP, empleados.EDADEMP, empleados.PUESTO, empleados.DEPTO, empleados.ACTIVO, usuarios.NUSUARIO, usuarios.contrasena from empleados INNER JOIN usuarios on usuarios.cvemp=empleados.cvemp where empleados.cvemp=" & CVEMP.Text)
             If Not consulta3.EOF Then
                 NOMEMP.Text = consulta3.Fields(1).Value
                 DIREMP.Text = consulta3.Fields(2).Value
@@ -179,6 +179,8 @@
                 PUESTO.Text = consulta3.Fields(6).Value
                 DEPTO.Text = consulta3.Fields(7).Value
                 ACTIVO.Text = consulta3.Fields(8).Value
+                USER.Text = consulta3.Fields(9).Value
+                PASS.Text = consulta3.Fields(10).Value
             Else
                 MsgBox("La cve del empleado esta vacia o esta dada de baja")
             End If

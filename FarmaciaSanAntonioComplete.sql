@@ -1,9 +1,13 @@
 /*+++++++++++++++++++++++ FARMACIA SAN ANTONIO COMPLETO +++++++++++++++++++++++++++++++++++++++++++++++*/
+/*INTEGRANTES DEL EQUIPO:
+--**CEJA RENETRIA ADRIAN --FRAGMENTO DE COMPRAS
+--**MENDIOLA CORREA CESR PAULINO --FRAGMENTO DE VENTAS*/
+
 CREATE DATABASE FarmSAntonio
 USE FarmSAntonioCompras
 DROP DATABASE FarmSAntonio
 --------------------------------------------------------
-		FRAGMENTO DE VENTAS
+		--FRAGMENTO DE VENTAS
 --------------------------------------------------------
 CREATE TABLE EMPLEADOS (
 	CVEMP INT PRIMARY KEY
@@ -27,7 +31,7 @@ CREATE TABLE VENTAS (
 	,FECHAVTA DATE DEFAULT(GETDATE())
 	)
 
-/*MODIFICACION DEL 03 DE MAYO DEL 2020*/
+/*CREACION DE LA TABLA USUARIOS*/
 CREATE TABLE USUARIOS (
 NUSUARIO VARCHAR (10) UNIQUE NOT NULL,
 CONTRASENA varchar (12) unique not null,
@@ -58,7 +62,7 @@ CREATE TABLE DETVTAPRO (
 	)
 
 --------------------------------------------------------
---			SECCION DE COMPRAS
+--			FRAGMENTO DE COMPRAS
 --------------------------------------------------------
 CREATE TABLE PROVEEDORES (
 	CVEPROV INT PRIMARY KEY

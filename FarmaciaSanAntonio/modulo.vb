@@ -13,7 +13,9 @@
     Public consultaC As Recordset 'cons de compras'
     Public ban As ADODB.Parameter
     Public bande As ADODB.Parameter
+    Public bandeEsp As ADODB.Parameter 'Variable especiál para ver el departamento'
     Public comando As ADODB.Command
+    Public comandoE As ADODB.Command
     Public coman2 As ADODB.Command
     Public comanC As ADODB.Command 'comando de compras'
     Public comanC2 As ADODB.Command 'comando de compras'
@@ -29,12 +31,13 @@
     Public nusuario As String
     Public depa As String
     Public claveUser As Integer
+    Public tipoPueso As Integer 'VARIBLE PARA VER EL TIPO DE PUESTO, ESTO POR SI HAY VARIOS ROLES'
 
     Public Sub conectar()
         conexion = New ADODB.Connection
         With conexion
             .Provider = "sqloledb"
-            .ConnectionString = "INITIAL CATALOG=FarmSAntonio;SERVER=DESKTOP-0GQC4OM\SQLEXPRESS;INTEGRATED SECURITY=SSPI;PERSIST SECURITY INFO=TRUE"
+            .ConnectionString = "INITIAL CATALOG=FarmSAntonio;SERVER=DESKTOP-7P5KUCB\SQLEXPRESS;INTEGRATED SECURITY=SSPI;PERSIST SECURITY INFO=TRUE"
 
             Try
                 .Open()
@@ -53,7 +56,7 @@
         conexionc = New ADODB.Connection
         With conexionc
             .Provider = "sqloledb"
-            .ConnectionString = "INITIAL CATALOG=FarmSAntonioCompras;SERVER=DESKTOP-0GQC4OM\SQLEXPRESS;INTEGRATED SECURITY=SSPI;PERSIST SECURITY INFO=TRUE"
+            .ConnectionString = "INITIAL CATALOG=FarmSAntonioCompras;SERVER=DESKTOP-7P5KUCB\SQLEXPRESS;INTEGRATED SECURITY=SSPI;PERSIST SECURITY INFO=TRUE"
             Try
                 .Open()
                 'MessageBox.Show("Conexión Compras")
@@ -69,7 +72,7 @@
         conexionv = New ADODB.Connection
         With conexionv
             .Provider = "sqloledb"
-            .ConnectionString = "INITIAL CATALOG=FarmSAntonioVentas;SERVER=DESKTOP-0GQC4OM\SQLEXPRESS;INTEGRATED SECURITY=SSPI;PERSIST SECURITY INFO=TRUE"
+            .ConnectionString = "INITIAL CATALOG=FarmSAntonioVentas;SERVER=DESKTOP-7P5KUCB\SQLEXPRESS;INTEGRATED SECURITY=SSPI;PERSIST SECURITY INFO=TRUE"
             Try
                 .Open()
                 'MessageBox.Show("Conexión Ventas")
@@ -88,5 +91,7 @@
             claveUser = consultaUser.Fields(0).Value
         End If
     End Sub
+
+
 
 End Module
