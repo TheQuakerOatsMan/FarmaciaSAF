@@ -115,7 +115,7 @@ Partial Class Ventas_Gnral
         '
         'btnre3
         '
-        Me.btnre3.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnre3.BackColor = System.Drawing.Color.Navy
         Me.btnre3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnre3.ForeColor = System.Drawing.Color.White
         Me.btnre3.Location = New System.Drawing.Point(48, 191)
@@ -127,9 +127,9 @@ Partial Class Ventas_Gnral
         '
         'modTP
         '
-        Me.modTP.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.modTP.BackColor = System.Drawing.Color.CornflowerBlue
         Me.modTP.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.modTP.ForeColor = System.Drawing.Color.DarkCyan
+        Me.modTP.ForeColor = System.Drawing.Color.Black
         Me.modTP.Location = New System.Drawing.Point(31, 139)
         Me.modTP.Name = "modTP"
         Me.modTP.Size = New System.Drawing.Size(203, 35)
@@ -173,7 +173,7 @@ Partial Class Ventas_Gnral
         Me.PanelEM.Controls.Add(Me.datadetvm)
         Me.PanelEM.Controls.Add(Me.btnre2)
         Me.PanelEM.Controls.Add(Me.btnre)
-        Me.PanelEM.Location = New System.Drawing.Point(270, 36)
+        Me.PanelEM.Location = New System.Drawing.Point(265, 40)
         Me.PanelEM.Name = "PanelEM"
         Me.PanelEM.Size = New System.Drawing.Size(523, 333)
         Me.PanelEM.TabIndex = 49
@@ -419,7 +419,7 @@ Partial Class Ventas_Gnral
         Me.panelEP.Controls.Add(Me.datavtapro)
         Me.panelEP.Controls.Add(Me.btnre11)
         Me.panelEP.Controls.Add(Me.btnEDP)
-        Me.panelEP.Location = New System.Drawing.Point(281, 36)
+        Me.panelEP.Location = New System.Drawing.Point(275, 40)
         Me.panelEP.Name = "panelEP"
         Me.panelEP.Size = New System.Drawing.Size(513, 355)
         Me.panelEP.TabIndex = 51
@@ -475,7 +475,7 @@ Partial Class Ventas_Gnral
         Me.panelET.Controls.Add(Me.btneTodo)
         Me.panelET.Controls.Add(Me.Label11)
         Me.panelET.Controls.Add(Me.comboventa)
-        Me.panelET.Location = New System.Drawing.Point(518, 36)
+        Me.panelET.Location = New System.Drawing.Point(524, 40)
         Me.panelET.Name = "panelET"
         Me.panelET.Size = New System.Drawing.Size(276, 212)
         Me.panelET.TabIndex = 52
@@ -539,7 +539,7 @@ Partial Class Ventas_Gnral
         Me.Panel1.Controls.Add(Me.Label13)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(800, 35)
         Me.Panel1.TabIndex = 80

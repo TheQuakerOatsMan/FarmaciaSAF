@@ -334,7 +334,7 @@
         Dim fecha As DateTime = dataDetComed.CurrentRow.Cells(4).Value
         Convert.ToDateTime(fecha)
         Dim fechac As String = Format(fecha, "yyyy/MM/dd")
-        consulta5 = conexionc.Execute("select cvecad from caducidad where fechacad = " & fechac)
+        consulta5 = conexionc.Execute("select cvecad from caducidad where fechacad = '" & fechac & "'")
         cvecad = consulta5.Fields(0).Value
 
         If (dataDetComed.SelectedRows.Count() > 0) Then
@@ -415,10 +415,10 @@
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         cveprod = dataDetcompro.CurrentRow.Cells(1).Value
-        Dim fecha As DateTime = dataDetcompro.CurrentRow.Cells(4).Value
+        Dim fecha As DateTime = dataDetcompro.CurrentRow.Cells(3).Value
         Convert.ToDateTime(fecha)
         Dim fechac As String = Format(fecha, "yyyy/MM/dd")
-        consulta5 = conexionc.Execute("select cvecad from caducidad where fechacad = " & fechac)
+        consulta5 = conexionc.Execute("select cvecad from caducidad where fechacad = '" & fechac & "'")
         cvecad = consulta5.Fields(0).Value
         If (dataDetcompro.SelectedRows.Count() > 0) Then
             cvecad = dataDetcompro.CurrentRow.Cells(1).Value

@@ -92,14 +92,16 @@ Partial Class Compras_Gnral
         Me.panDetProd.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.panDetProd.BackColor = System.Drawing.Color.Lavender
+        Me.panDetProd.Controls.Add(Me.panGanProd)
+        Me.panDetProd.Controls.Add(Me.panFechaProd)
         Me.panDetProd.Controls.Add(Me.Button6)
         Me.panDetProd.Controls.Add(Me.Label8)
         Me.panDetProd.Controls.Add(Me.dataDetcompro)
         Me.panDetProd.Controls.Add(Me.Button7)
         Me.panDetProd.Controls.Add(Me.Button8)
-        Me.panDetProd.Location = New System.Drawing.Point(260, 39)
+        Me.panDetProd.Location = New System.Drawing.Point(259, 38)
         Me.panDetProd.Name = "panDetProd"
-        Me.panDetProd.Size = New System.Drawing.Size(513, 329)
+        Me.panDetProd.Size = New System.Drawing.Size(506, 321)
         Me.panDetProd.TabIndex = 78
         Me.panDetProd.Visible = False
         '
@@ -162,15 +164,14 @@ Partial Class Compras_Gnral
         Me.panelEP.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.panelEP.BackColor = System.Drawing.Color.Lavender
-        Me.panelEP.Controls.Add(Me.panFechaProd)
-        Me.panelEP.Controls.Add(Me.panGanProd)
+        Me.panelEP.Controls.Add(Me.panFechaMed)
         Me.panelEP.Controls.Add(Me.panelGanMed)
         Me.panelEP.Controls.Add(Me.Button1)
         Me.panelEP.Controls.Add(Me.Label10)
         Me.panelEP.Controls.Add(Me.dataDetComed)
         Me.panelEP.Controls.Add(Me.btnre11)
         Me.panelEP.Controls.Add(Me.btnEDP)
-        Me.panelEP.Location = New System.Drawing.Point(261, 39)
+        Me.panelEP.Location = New System.Drawing.Point(259, 38)
         Me.panelEP.Name = "panelEP"
         Me.panelEP.Size = New System.Drawing.Size(513, 329)
         Me.panelEP.TabIndex = 77
@@ -183,7 +184,7 @@ Partial Class Compras_Gnral
         Me.panFechaProd.Controls.Add(Me.Label7)
         Me.panFechaProd.Controls.Add(Me.regprodF)
         Me.panFechaProd.Controls.Add(Me.acpFechaProd)
-        Me.panFechaProd.Location = New System.Drawing.Point(125, 66)
+        Me.panFechaProd.Location = New System.Drawing.Point(115, 90)
         Me.panFechaProd.Name = "panFechaProd"
         Me.panFechaProd.Size = New System.Drawing.Size(276, 193)
         Me.panFechaProd.TabIndex = 72
@@ -207,7 +208,7 @@ Partial Class Compras_Gnral
         '
         'regprodF
         '
-        Me.regprodF.BackColor = System.Drawing.Color.DarkCyan
+        Me.regprodF.BackColor = System.Drawing.Color.Navy
         Me.regprodF.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.regprodF.ForeColor = System.Drawing.Color.White
         Me.regprodF.Location = New System.Drawing.Point(44, 121)
@@ -219,9 +220,9 @@ Partial Class Compras_Gnral
         '
         'acpFechaProd
         '
-        Me.acpFechaProd.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.acpFechaProd.BackColor = System.Drawing.Color.CornflowerBlue
         Me.acpFechaProd.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.acpFechaProd.ForeColor = System.Drawing.Color.DarkCyan
+        Me.acpFechaProd.ForeColor = System.Drawing.Color.Black
         Me.acpFechaProd.Location = New System.Drawing.Point(44, 79)
         Me.acpFechaProd.Name = "acpFechaProd"
         Me.acpFechaProd.Size = New System.Drawing.Size(192, 36)
@@ -236,7 +237,7 @@ Partial Class Compras_Gnral
         Me.panGanProd.Controls.Add(Me.Label4)
         Me.panGanProd.Controls.Add(Me.regfechProd)
         Me.panGanProd.Controls.Add(Me.acepFechaProd)
-        Me.panGanProd.Location = New System.Drawing.Point(123, 66)
+        Me.panGanProd.Location = New System.Drawing.Point(109, 90)
         Me.panGanProd.Name = "panGanProd"
         Me.panGanProd.Size = New System.Drawing.Size(276, 193)
         Me.panGanProd.TabIndex = 70
@@ -260,7 +261,7 @@ Partial Class Compras_Gnral
         '
         'regfechProd
         '
-        Me.regfechProd.BackColor = System.Drawing.Color.DarkCyan
+        Me.regfechProd.BackColor = System.Drawing.Color.Navy
         Me.regfechProd.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.regfechProd.ForeColor = System.Drawing.Color.White
         Me.regfechProd.Location = New System.Drawing.Point(44, 121)
@@ -272,9 +273,9 @@ Partial Class Compras_Gnral
         '
         'acepFechaProd
         '
-        Me.acepFechaProd.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.acepFechaProd.BackColor = System.Drawing.Color.CornflowerBlue
         Me.acepFechaProd.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.acepFechaProd.ForeColor = System.Drawing.Color.DarkCyan
+        Me.acepFechaProd.ForeColor = System.Drawing.Color.Black
         Me.acepFechaProd.Location = New System.Drawing.Point(44, 79)
         Me.acepFechaProd.Name = "acepFechaProd"
         Me.acepFechaProd.Size = New System.Drawing.Size(192, 36)
@@ -286,11 +287,10 @@ Partial Class Compras_Gnral
         '
         Me.panelGanMed.BackColor = System.Drawing.Color.Lavender
         Me.panelGanMed.Controls.Add(Me.txtganancia)
-        Me.panelGanMed.Controls.Add(Me.panFechaMed)
         Me.panelGanMed.Controls.Add(Me.Label3)
         Me.panelGanMed.Controls.Add(Me.btnRegresar)
         Me.panelGanMed.Controls.Add(Me.btnAcep)
-        Me.panelGanMed.Location = New System.Drawing.Point(125, 66)
+        Me.panelGanMed.Location = New System.Drawing.Point(112, 69)
         Me.panelGanMed.Name = "panelGanMed"
         Me.panelGanMed.Size = New System.Drawing.Size(276, 193)
         Me.panelGanMed.TabIndex = 69
@@ -310,7 +310,7 @@ Partial Class Compras_Gnral
         Me.panFechaMed.Controls.Add(Me.Label6)
         Me.panFechaMed.Controls.Add(Me.Button2)
         Me.panFechaMed.Controls.Add(Me.Button3)
-        Me.panFechaMed.Location = New System.Drawing.Point(3, 93)
+        Me.panFechaMed.Location = New System.Drawing.Point(109, 70)
         Me.panFechaMed.Name = "panFechaMed"
         Me.panFechaMed.Size = New System.Drawing.Size(276, 193)
         Me.panFechaMed.TabIndex = 71
@@ -334,7 +334,7 @@ Partial Class Compras_Gnral
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button2.BackColor = System.Drawing.Color.Navy
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.White
         Me.Button2.Location = New System.Drawing.Point(44, 121)
@@ -346,9 +346,9 @@ Partial Class Compras_Gnral
         '
         'Button3
         '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button3.BackColor = System.Drawing.Color.CornflowerBlue
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.DarkCyan
+        Me.Button3.ForeColor = System.Drawing.Color.Black
         Me.Button3.Location = New System.Drawing.Point(44, 79)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(192, 36)
@@ -367,7 +367,7 @@ Partial Class Compras_Gnral
         '
         'btnRegresar
         '
-        Me.btnRegresar.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnRegresar.BackColor = System.Drawing.Color.Navy
         Me.btnRegresar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRegresar.ForeColor = System.Drawing.Color.White
         Me.btnRegresar.Location = New System.Drawing.Point(44, 121)
@@ -379,9 +379,9 @@ Partial Class Compras_Gnral
         '
         'btnAcep
         '
-        Me.btnAcep.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnAcep.BackColor = System.Drawing.Color.CornflowerBlue
         Me.btnAcep.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAcep.ForeColor = System.Drawing.Color.DarkCyan
+        Me.btnAcep.ForeColor = System.Drawing.Color.Black
         Me.btnAcep.Location = New System.Drawing.Point(44, 79)
         Me.btnAcep.Name = "btnAcep"
         Me.btnAcep.Size = New System.Drawing.Size(192, 36)
@@ -391,9 +391,9 @@ Partial Class Compras_Gnral
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button1.BackColor = System.Drawing.Color.CornflowerBlue
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.DarkCyan
+        Me.Button1.ForeColor = System.Drawing.Color.Black
         Me.Button1.Location = New System.Drawing.Point(31, 227)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(192, 36)
@@ -421,7 +421,7 @@ Partial Class Compras_Gnral
         '
         'btnre11
         '
-        Me.btnre11.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnre11.BackColor = System.Drawing.Color.Navy
         Me.btnre11.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnre11.ForeColor = System.Drawing.Color.White
         Me.btnre11.Location = New System.Drawing.Point(30, 269)
@@ -433,9 +433,9 @@ Partial Class Compras_Gnral
         '
         'btnEDP
         '
-        Me.btnEDP.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnEDP.BackColor = System.Drawing.Color.CornflowerBlue
         Me.btnEDP.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEDP.ForeColor = System.Drawing.Color.DarkCyan
+        Me.btnEDP.ForeColor = System.Drawing.Color.Black
         Me.btnEDP.Location = New System.Drawing.Point(31, 185)
         Me.btnEDP.Name = "btnEDP"
         Me.btnEDP.Size = New System.Drawing.Size(192, 36)
@@ -468,7 +468,7 @@ Partial Class Compras_Gnral
         '
         'btnre16
         '
-        Me.btnre16.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnre16.BackColor = System.Drawing.Color.Navy
         Me.btnre16.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnre16.ForeColor = System.Drawing.Color.White
         Me.btnre16.Location = New System.Drawing.Point(61, 149)
@@ -480,9 +480,9 @@ Partial Class Compras_Gnral
         '
         'btneTodo
         '
-        Me.btneTodo.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btneTodo.BackColor = System.Drawing.Color.CornflowerBlue
         Me.btneTodo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btneTodo.ForeColor = System.Drawing.Color.DarkCyan
+        Me.btneTodo.ForeColor = System.Drawing.Color.Black
         Me.btneTodo.Location = New System.Drawing.Point(44, 99)
         Me.btneTodo.Name = "btneTodo"
         Me.btneTodo.Size = New System.Drawing.Size(192, 36)
@@ -643,7 +643,7 @@ Partial Class Compras_Gnral
         Me.Panel1.Controls.Add(Me.Label9)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(779, 35)
         Me.Panel1.TabIndex = 79
