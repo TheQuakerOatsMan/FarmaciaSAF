@@ -94,7 +94,7 @@ Public Class Ventas_Gnral
                 IVA.Text = FormatCurrency(consulta2.Fields(2).Value)
                 TIPOP.Text = consulta2.Fields(3).Value
                 FECHA.Text = FormatDateTime(consulta2.Fields(4).Value)
-                If (tipoPueso = 5 Or tipoPueso = 6) Then
+                If (tipoPueso = 5 Or tipoPueso = 6 Or tipoPueso = 7) Then
                     modV.Enabled = True
                     elimP.Enabled = True
                     elimM.Enabled = True
