@@ -281,11 +281,12 @@
             .Parameters.Append(.CreateParameter("2", DataTypeEnum.adInteger, ParameterDirectionEnum.adParamOutput, , 0)) 'BANDERA val(nombredelcampo.Text)'
             .ActiveConnection = conexionv
             .Execute()
-            ban.Value = .Parameters(1).Value
+            ban.Value = .Parameters(2).Value
 
         End With
+        MsgBox("clave " & Val(comboeliminar.SelectedItem))
         If ban.Value = 1 Then
-            MsgBox("LA CLAVE DEL EMPLEADO NO PUEDE ESTAR VACIA")
+            MsgBox("LA CLAVE DEL EMPLEADO NO PUEDE ESTAR VACIA JIJI")
         Else
             If ban.Value = 2 Then
                 MsgBox("LA CLAVE DEL EMPELADO NO SE ENCUENTRA REGISTRADA EN LA BASE DE DATOS")
@@ -297,7 +298,7 @@
                         MsgBox("EL USUARIO NO TIENE UNA SESION INICIADA, CIERRE ESA SESION PARA TERMINAR")
                     Else
                         If ban.Value = 50 Then
-                            MsgBox("LA CLAVE DEL EMPLEADO NO PUEDE ESTA VACIA ")
+                            MsgBox("LA CLAVE DEL USUARIO NO PUEDE ESTA VACIA ")
                         Else
                             If ban.Value = 51 Then
                                 MsgBox("EL USUARIO NO EXISTE")
@@ -422,6 +423,7 @@
             MsgBox("INGRESA UNA CLAVE PARA MODIFICAR UN EMPLEADO")
         Else
             frm.CVEMP.Text = Val(CVEMP.SelectedItem)
+            frm.CVEMP.Items.Add(Val(CVEMP.SelectedItem))
             frm.NOMEMP.Text = NOMEMP.Text
             frm.DIREMP.Text = DIREMP.Text
             frm.CORREOEMP.Text = CORREOEMP.Text

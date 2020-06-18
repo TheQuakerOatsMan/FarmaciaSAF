@@ -6,6 +6,10 @@
             VENTASToolStripMenuItem.Visible = False
             EMPLEADOSToolStripMenuItem.Visible = False
             Call DMyP()
+            If (tipoPueso = 8) Then
+                ALTASToolStripMenuItem.Visible = False
+                AgregarCompraToolStripMenuItem.Visible = False
+            End If
         End If
         If (depa = "VENTAS") Then
             PROVEEDORESToolStripMenuItem.Visible = False
@@ -16,10 +20,16 @@
             MODEMPLEADOSToolStripMenuItem.Visible = False
         End If
         If (depa = "GERENCIA") Then
-            If (tipoPueso = 5) Then 'ENCARGADO DE TIENDA'
+            If (tipoPueso = 5 Or tipoPueso = 7) Then 'ENCARGADO DE TIENDA'
                 Call DMyP()
                 ALTASToolStripMenuItem1.Visible = False
                 MODEMPLEADOSToolStripMenuItem.Visible = False
+            End If
+            If (tipoPueso = 7) Then 'contador'
+                AgregarCompraToolStripMenuItem.Visible = False
+                AgregarVentaToolStripMenuItem.Visible = False
+                ALTASToolStripMenuItem.Visible = False
+                ALTASToolStripMenuItem1.Visible = False
             End If
         End If
 
@@ -140,6 +150,12 @@
         proveedores.LOCALIDAD.Enabled = False
         proveedores.btninsertar.Enabled = False
         proveedores.consultae.Enabled = True
+        If tipoPueso = 8 Or tipoPueso = 7 Then 'contado o aux'
+            proveedores.btnBajaTP.Enabled = False
+            proveedores.btnRP.Enabled = False
+            proveedores.btnEP.Enabled = False
+            proveedores.btnModP.Enabled = False
+        End If
     End Sub
 
     Private Sub ALTASToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ALTASToolStripMenuItem1.Click
@@ -178,7 +194,7 @@
         empleados.btninsertar.Enabled = False
         empleados.consultae.Enabled = True
 
-        If tipoPueso = 5 Or tipoPueso = 3 Then 'ENCARGADO o CAJERO(A)'
+        If tipoPueso = 5 Or tipoPueso = 3 Or tipoPueso = 7 Then 'ENCARGADO o CAJERO(A)'
             empleados.btnEEmp.Visible = False
             empleados.btnBajaTP.Visible = False
             empleados.btnModP.Visible = False
@@ -208,7 +224,7 @@
         Medicamentos_gnral.EXISTENCIASM.Enabled = False
         Medicamentos_gnral.btnInsM.Enabled = False
 
-        If (tipoPueso = 5 Or tipoPueso = 3) Then
+        If (tipoPueso = 5 Or tipoPueso = 3 Or tipoPueso = 7 Or tipoPueso = 8 Or tipoPueso = 4) Then
             Call DMyP()
         Else
             If tipoPueso = 6 Then
@@ -249,7 +265,7 @@
         ProductosGral.ESTADO.Enabled = False
         ProductosGral.EXISTENCIASP.Enabled = False
         ProductosGral.btnInsP.Enabled = False
-        If (tipoPueso = 5 Or tipoPueso = 3) Then
+        If (tipoPueso = 5 Or tipoPueso = 3 Or tipoPueso = 7 Or tipoPueso = 8 Or tipoPueso = 4) Then
             Call DMyP()
         Else
             If tipoPueso = 6 Then
@@ -293,7 +309,7 @@
             Ventas_Gnral.ELIMINA.Visible = False
             Ventas_Gnral.btnmodImg.Visible = False
         Else
-            If tipoPueso = 6 Or tipoPueso = 5 Then
+            If tipoPueso = 6 Or tipoPueso = 5 Or tipoPueso = 7 Then
                 Ventas_Gnral.ELIMINA.Visible = True
                 Ventas_Gnral.btnmodImg.Visible = True
             End If
@@ -352,6 +368,7 @@
         modEmpleados.modP.Enabled = False
         modEmpleados.modE.Enabled = False
         modEmpleados.modEGral.Enabled = False
+
     End Sub
 
     Private Sub TodosLoProductosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TodosLoProductosToolStripMenuItem.Click

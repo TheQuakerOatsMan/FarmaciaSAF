@@ -3,6 +3,7 @@
     Private Sub modEmpleados_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If valor = 1 Then
             MsgBox("DATOS CARGADOS CORRESPONDIENTES AL EMPLEADO")
+            CVEMP.Enabled = True
         Else
             menuprin.Enabled = False
             menuprin.Visible = False
@@ -212,7 +213,7 @@
                 .CommandType = CommandType.StoredProcedure
                 '.Parameters.Append(.CreateParameter("0", DataTypeEnum.adInteger, ParameterDirectionEnum.adParamInput, , Val(CVEPROV.Text))) ' sirve para un entero decimal o money para el tipo de dato fecha se busca como date y para el tipo de dato money se busca como currency'
                 .Parameters.Append(.CreateParameter("0", DataTypeEnum.adInteger, ParameterDirectionEnum.adParamInput, , Val(CVEMP.SelectedItem)))
-                .Parameters.Append(.CreateParameter("1", DataTypeEnum.adVarChar, ParameterDirectionEnum.adParamInput, 30, PUESTO.SelectedItem.ToString))
+                .Parameters.Append(.CreateParameter("1", DataTypeEnum.adVarChar, ParameterDirectionEnum.adParamInput, 20, PUESTO.SelectedItem.ToString))
                 .Parameters.Append(.CreateParameter("2", DataTypeEnum.adInteger, ParameterDirectionEnum.adParamInput, , claveUser))
                 .Parameters.Append(.CreateParameter("3", DataTypeEnum.adInteger, ParameterDirectionEnum.adParamOutput, , 0)) 'BANDERA val(nombredelcampo.Text)'
                 .ActiveConnection = conexionv
