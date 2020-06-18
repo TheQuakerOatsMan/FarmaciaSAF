@@ -78,6 +78,9 @@
         btnModM.Enabled = False
         btnBajaTM.Enabled = False
         btnRM.Enabled = False
+        btnConsulta.Enabled = False
+        CVEMED.Enabled = False
+        comboeliminar.Text = ""
     End Sub
 
     Private Sub btnModM_Click(sender As Object, e As EventArgs) Handles btnModM.Click
@@ -86,6 +89,9 @@
         btnEM.Enabled = False
         btnBajaTM.Enabled = False
         btnRM.Enabled = False
+        btnConsulta.Enabled = False
+        CVEMED.Enabled = False
+        combomod.Text = ""
     End Sub
 
     Private Sub btnBajaTM_Click(sender As Object, e As EventArgs) Handles btnBajaTM.Click
@@ -94,6 +100,9 @@
         btnEM.Enabled = False
         btnModM.Enabled = False
         btnRM.Enabled = False
+        btnConsulta.Enabled = False
+        CVEMED.Enabled = False
+        combotemporal.Text = ""
     End Sub
 
     Private Sub btnre1_Click(sender As Object, e As EventArgs) Handles btnre1.Click
@@ -102,6 +111,8 @@
         btnEM.Enabled = True
         btnModM.Enabled = True
         btnRM.Enabled = True
+        btnConsulta.Enabled = True
+        CVEMED.Enabled = True
     End Sub
 
     Private Sub btnre2_Click(sender As Object, e As EventArgs) Handles btnre2.Click
@@ -110,6 +121,8 @@
         btnEM.Enabled = True
         btnModM.Enabled = True
         btnRM.Enabled = True
+        btnConsulta.Enabled = True
+        CVEMED.Enabled = True
     End Sub
 
     Private Sub btnre3_Click(sender As Object, e As EventArgs) Handles btnre3.Click
@@ -118,6 +131,8 @@
         btnEM.Enabled = True
         btnModM.Enabled = True
         btnRM.Enabled = True
+        btnConsulta.Enabled = True
+        CVEMED.Enabled = True
     End Sub
 
     Private Sub ElimMed_Click(sender As Object, e As EventArgs) Handles ElimMed.Click
@@ -164,7 +179,7 @@
                                         Else
                                             MsgBox("MEDICAMENTO ELIMINADO CON EXITO")
                                             'AÑADIR LOS CAMPOS QUE FALTAN'
-                                            comboeliminar.SelectedText = ""
+                                            comboeliminar.Text = ""
                                         End If
                                     End If
                                 End If
@@ -307,7 +322,7 @@
                                     MsgBox("SESION NO INICIADA, INICIE UNA SESION PARA CONTINUAR")
                                 Else
                                     MsgBox("MEDICAMENTO DADO DE BAJA")
-                                    combotemporal.SelectedText = ""
+                                    combotemporal.Text = ""
                                     'AÑADIR LOS CAMPOS QUE FALTAN'
                                 End If
                             End If
@@ -324,6 +339,9 @@
         btnEM.Enabled = False
         btnModM.Enabled = False
         btnRM.Enabled = False
+        btnConsulta.Enabled = False
+        CVEMED.Enabled = False
+        comboreac.Text = ""
     End Sub
 
     Private Sub btnre4_Click(sender As Object, e As EventArgs) Handles btnre4.Click
@@ -332,6 +350,8 @@
         btnEM.Enabled = True
         btnModM.Enabled = True
         btnRM.Enabled = True
+        btnConsulta.Enabled = True
+        CVEMED.Enabled = True
     End Sub
 
     Private Sub btnReac_Click(sender As Object, e As EventArgs) Handles btnReac.Click
@@ -368,7 +388,7 @@
                                 MsgBox("SESION NO INICIADA, INICIE UNA SESION PARA CONTINUAR")
                             Else
                                 MsgBox("MEDICAMENTO REACTIVADO")
-                                comboreac.SelectedText = ""
+                                comboreac.Text = ""
                                 'AÑADIR LOS CAMPOS QUE FALTAN'
                             End If
                         End If

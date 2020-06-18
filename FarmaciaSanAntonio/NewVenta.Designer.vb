@@ -24,20 +24,15 @@ Partial Class NewVenta
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.MEDICAMENTOSBindingSource5 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.FarmSAntonioVentasDataVTAMED = New FarmaciaSanAntonio.FarmSAntonioVentasDataVTAMED()
         Me.MEDICAMENTOSBindingSource4 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.FarmSAntonioVentasDataSet3 = New FarmaciaSanAntonio.FarmSAntonioVentasDataSet3()
         Me.MEDICAMENTOSBindingSource3 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.FarmSAntonioDataSet13 = New FarmaciaSanAntonio.FarmSAntonioDataSet13()
         Me.MEDICAMENTOSBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
         Me.MEDICAMENTOSBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.addProd = New System.Windows.Forms.Button()
         Me.btnre = New System.Windows.Forms.Button()
         Me.DataProd = New System.Windows.Forms.DataGridView()
         Me.PRODUCTOSBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.FarmSAntonioVentasDataSet1 = New FarmaciaSanAntonio.FarmSAntonioVentasDataSet1()
         Me.PRODUCTOSBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.FarmSAntonioDataSet14 = New FarmaciaSanAntonio.FarmSAntonioDataSet14()
         Me.PRODUCTOSBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.MEDICAMENTOSBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.data2 = New System.Windows.Forms.DataGridView()
@@ -51,26 +46,19 @@ Partial Class NewVenta
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.totalvta = New System.Windows.Forms.TextBox()
+        Me.btnCancel = New System.Windows.Forms.Button()
         Me.cvvta = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.ctNEmp = New System.Windows.Forms.TextBox()
         Me.ctemp = New System.Windows.Forms.TextBox()
         Me.addm = New System.Windows.Forms.Button()
         Me.btnadd = New System.Windows.Forms.Button()
-        Me.btnCancel = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.data1 = New System.Windows.Forms.DataGridView()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.MEDICAMENTOSTableAdapter3 = New FarmaciaSanAntonio.FarmSAntonioDataSet13TableAdapters.MEDICAMENTOSTableAdapter()
-        Me.PRODUCTOSTableAdapter1 = New FarmaciaSanAntonio.FarmSAntonioDataSet14TableAdapters.PRODUCTOSTableAdapter()
-        Me.PRODUCTOSTableAdapter = New FarmaciaSanAntonio.FarmSAntonioVentasDataSet1TableAdapters.PRODUCTOSTableAdapter()
-        Me.FarmSAntonioVentasDataSet2 = New FarmaciaSanAntonio.FarmSAntonioVentasDataSet2()
         Me.PRODUCTOSBindingSource3 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.PRODUCTOSTableAdapter2 = New FarmaciaSanAntonio.FarmSAntonioVentasDataSet2TableAdapters.PRODUCTOSTableAdapter()
-        Me.MEDICAMENTOSTableAdapter = New FarmaciaSanAntonio.FarmSAntonioVentasDataSet3TableAdapters.MEDICAMENTOSTableAdapter()
-        Me.MEDICAMENTOSTableAdapter1 = New FarmaciaSanAntonio.FarmSAntonioVentasDataVTAMEDTableAdapters.MEDICAMENTOSTableAdapter()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.BTNEREVTA = New System.Windows.Forms.Button()
@@ -78,58 +66,22 @@ Partial Class NewVenta
         Me.btndetvmed = New System.Windows.Forms.Button()
         Me.DataMedi = New System.Windows.Forms.DataGridView()
         CType(Me.MEDICAMENTOSBindingSource5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.FarmSAntonioVentasDataVTAMED, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MEDICAMENTOSBindingSource4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.FarmSAntonioVentasDataSet3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MEDICAMENTOSBindingSource3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.FarmSAntonioDataSet13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MEDICAMENTOSBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MEDICAMENTOSBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataProd, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PRODUCTOSBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.FarmSAntonioVentasDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PRODUCTOSBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.FarmSAntonioDataSet14, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PRODUCTOSBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MEDICAMENTOSBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.data2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panelTotal.SuspendLayout()
         CType(Me.data1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.FarmSAntonioVentasDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PRODUCTOSBindingSource3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.DataMedi, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'MEDICAMENTOSBindingSource5
-        '
-        Me.MEDICAMENTOSBindingSource5.DataMember = "MEDICAMENTOS"
-        Me.MEDICAMENTOSBindingSource5.DataSource = Me.FarmSAntonioVentasDataVTAMED
-        '
-        'FarmSAntonioVentasDataVTAMED
-        '
-        Me.FarmSAntonioVentasDataVTAMED.DataSetName = "FarmSAntonioVentasDataVTAMED"
-        Me.FarmSAntonioVentasDataVTAMED.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'MEDICAMENTOSBindingSource4
-        '
-        Me.MEDICAMENTOSBindingSource4.DataMember = "MEDICAMENTOS"
-        Me.MEDICAMENTOSBindingSource4.DataSource = Me.FarmSAntonioVentasDataSet3
-        '
-        'FarmSAntonioVentasDataSet3
-        '
-        Me.FarmSAntonioVentasDataSet3.DataSetName = "FarmSAntonioVentasDataSet3"
-        Me.FarmSAntonioVentasDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'MEDICAMENTOSBindingSource3
-        '
-        Me.MEDICAMENTOSBindingSource3.DataMember = "MEDICAMENTOS"
-        Me.MEDICAMENTOSBindingSource3.DataSource = Me.FarmSAntonioDataSet13
-        '
-        'FarmSAntonioDataSet13
-        '
-        Me.FarmSAntonioDataSet13.DataSetName = "FarmSAntonioDataSet13"
-        Me.FarmSAntonioDataSet13.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'MEDICAMENTOSBindingSource2
         '
@@ -168,26 +120,6 @@ Partial Class NewVenta
         Me.DataProd.RowHeadersWidth = 62
         Me.DataProd.Size = New System.Drawing.Size(653, 294)
         Me.DataProd.TabIndex = 0
-        '
-        'PRODUCTOSBindingSource2
-        '
-        Me.PRODUCTOSBindingSource2.DataMember = "PRODUCTOS"
-        Me.PRODUCTOSBindingSource2.DataSource = Me.FarmSAntonioVentasDataSet1
-        '
-        'FarmSAntonioVentasDataSet1
-        '
-        Me.FarmSAntonioVentasDataSet1.DataSetName = "FarmSAntonioVentasDataSet1"
-        Me.FarmSAntonioVentasDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'PRODUCTOSBindingSource1
-        '
-        Me.PRODUCTOSBindingSource1.DataMember = "PRODUCTOS"
-        Me.PRODUCTOSBindingSource1.DataSource = Me.FarmSAntonioDataSet14
-        '
-        'FarmSAntonioDataSet14
-        '
-        Me.FarmSAntonioDataSet14.DataSetName = "FarmSAntonioDataSet14"
-        Me.FarmSAntonioDataSet14.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'PRODUCTOSBindingSource
         '
@@ -303,6 +235,17 @@ Partial Class NewVenta
         Me.totalvta.Size = New System.Drawing.Size(121, 20)
         Me.totalvta.TabIndex = 12
         '
+        'btnCancel
+        '
+        Me.btnCancel.BackColor = System.Drawing.Color.Navy
+        Me.btnCancel.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.btnCancel.Location = New System.Drawing.Point(56, 186)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(157, 33)
+        Me.btnCancel.TabIndex = 26
+        Me.btnCancel.Text = "CANCELAR VENTA"
+        Me.btnCancel.UseVisualStyleBackColor = False
+        '
         'cvvta
         '
         Me.cvvta.Enabled = False
@@ -356,17 +299,6 @@ Partial Class NewVenta
         Me.btnadd.Text = "AGREGAR PRODUCTO"
         Me.btnadd.UseVisualStyleBackColor = False
         '
-        'btnCancel
-        '
-        Me.btnCancel.BackColor = System.Drawing.Color.Navy
-        Me.btnCancel.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.btnCancel.Location = New System.Drawing.Point(56, 186)
-        Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(157, 33)
-        Me.btnCancel.TabIndex = 26
-        Me.btnCancel.Text = "CANCELAR VENTA"
-        Me.btnCancel.UseVisualStyleBackColor = False
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -411,40 +343,6 @@ Partial Class NewVenta
         Me.Label9.Size = New System.Drawing.Size(132, 13)
         Me.Label9.TabIndex = 36
         Me.Label9.Text = "PANEL MEDICAMENTOS"
-        '
-        'MEDICAMENTOSTableAdapter3
-        '
-        Me.MEDICAMENTOSTableAdapter3.ClearBeforeFill = True
-        '
-        'PRODUCTOSTableAdapter1
-        '
-        Me.PRODUCTOSTableAdapter1.ClearBeforeFill = True
-        '
-        'PRODUCTOSTableAdapter
-        '
-        Me.PRODUCTOSTableAdapter.ClearBeforeFill = True
-        '
-        'FarmSAntonioVentasDataSet2
-        '
-        Me.FarmSAntonioVentasDataSet2.DataSetName = "FarmSAntonioVentasDataSet2"
-        Me.FarmSAntonioVentasDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'PRODUCTOSBindingSource3
-        '
-        Me.PRODUCTOSBindingSource3.DataMember = "PRODUCTOS"
-        Me.PRODUCTOSBindingSource3.DataSource = Me.FarmSAntonioVentasDataSet2
-        '
-        'PRODUCTOSTableAdapter2
-        '
-        Me.PRODUCTOSTableAdapter2.ClearBeforeFill = True
-        '
-        'MEDICAMENTOSTableAdapter
-        '
-        Me.MEDICAMENTOSTableAdapter.ClearBeforeFill = True
-        '
-        'MEDICAMENTOSTableAdapter1
-        '
-        Me.MEDICAMENTOSTableAdapter1.ClearBeforeFill = True
         '
         'Label10
         '
@@ -518,6 +416,8 @@ Partial Class NewVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.FarmaciaSanAntonio.My.Resources.Resources.farmaantonioi2
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1006, 526)
         Me.Controls.Add(Me.DataMedi)
         Me.Controls.Add(Me.btndetvmed)
@@ -544,25 +444,19 @@ Partial Class NewVenta
         Me.Name = "NewVenta"
         Me.Text = "AgregarVentas"
         CType(Me.MEDICAMENTOSBindingSource5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.FarmSAntonioVentasDataVTAMED, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MEDICAMENTOSBindingSource4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.FarmSAntonioVentasDataSet3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MEDICAMENTOSBindingSource3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.FarmSAntonioDataSet13, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MEDICAMENTOSBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MEDICAMENTOSBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataProd, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PRODUCTOSBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.FarmSAntonioVentasDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PRODUCTOSBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.FarmSAntonioDataSet14, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PRODUCTOSBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MEDICAMENTOSBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.data2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.panelTotal.ResumeLayout(False)
         Me.panelTotal.PerformLayout()
         CType(Me.data1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.FarmSAntonioVentasDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PRODUCTOSBindingSource3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
@@ -614,24 +508,13 @@ Partial Class NewVenta
     Friend WithEvents data1 As DataGridView
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents FarmSAntonioDataSet13 As FarmSAntonioDataSet13
     Friend WithEvents MEDICAMENTOSBindingSource3 As BindingSource
-    Friend WithEvents MEDICAMENTOSTableAdapter3 As FarmSAntonioDataSet13TableAdapters.MEDICAMENTOSTableAdapter
-    Friend WithEvents FarmSAntonioDataSet14 As FarmSAntonioDataSet14
     Friend WithEvents PRODUCTOSBindingSource1 As BindingSource
-    Friend WithEvents PRODUCTOSTableAdapter1 As FarmSAntonioDataSet14TableAdapters.PRODUCTOSTableAdapter
-    Friend WithEvents FarmSAntonioVentasDataSet1 As FarmSAntonioVentasDataSet1
     Friend WithEvents PRODUCTOSBindingSource2 As BindingSource
-    Friend WithEvents PRODUCTOSTableAdapter As FarmSAntonioVentasDataSet1TableAdapters.PRODUCTOSTableAdapter
-    Friend WithEvents FarmSAntonioVentasDataSet2 As FarmSAntonioVentasDataSet2
     Friend WithEvents PRODUCTOSBindingSource3 As BindingSource
-    Friend WithEvents PRODUCTOSTableAdapter2 As FarmSAntonioVentasDataSet2TableAdapters.PRODUCTOSTableAdapter
-    Friend WithEvents FarmSAntonioVentasDataSet3 As FarmSAntonioVentasDataSet3
     Friend WithEvents MEDICAMENTOSBindingSource4 As BindingSource
-    Friend WithEvents MEDICAMENTOSTableAdapter As FarmSAntonioVentasDataSet3TableAdapters.MEDICAMENTOSTableAdapter
-    Friend WithEvents FarmSAntonioVentasDataVTAMED As FarmSAntonioVentasDataVTAMED
     Friend WithEvents MEDICAMENTOSBindingSource5 As BindingSource
-    Friend WithEvents MEDICAMENTOSTableAdapter1 As FarmSAntonioVentasDataVTAMEDTableAdapters.MEDICAMENTOSTableAdapter
+
     Friend WithEvents ctpag As ComboBox
     Friend WithEvents Label10 As Label
     Friend WithEvents Panel1 As Panel

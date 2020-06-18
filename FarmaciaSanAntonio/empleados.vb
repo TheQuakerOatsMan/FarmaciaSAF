@@ -185,6 +185,10 @@
                 MsgBox("La cve del empleado esta vacia o esta dada de baja")
             End If
         End If
+        If (tipoPueso = 5 Or tipoPueso = 3) Then
+            USER.Text = "------------"
+            PASS.Text = "------------"
+        End If
     End Sub
 
     Private Sub salire_Click(sender As Object, e As EventArgs) Handles salire.Click
@@ -233,7 +237,7 @@
                                         MsgBox("EL DEPARTAMENTO AL QUE PERTENECE ESTE USUARIO NO ESTA PERMITIDO PARA REALIZAR ESTE TIPO DE OPERACION")
                                     Else
                                         MsgBox("EMPLEADO REACTIVADO")
-                                        comboreac.SelectedText = ""
+                                        comboreac.Text = ""
                                         'AÑADIR LOS CAMPOS QUE FALTAN'
                                     End If
                                 End If
@@ -263,6 +267,7 @@
         btnRP.Enabled = False
         btnBajaTP.Enabled = False
         btnEEmp.Enabled = False
+        comboreac.Text = ""
     End Sub
 
     Private Sub ElimMed_Click(sender As Object, e As EventArgs) Handles ElimMed.Click
@@ -305,7 +310,7 @@
                                     Else
                                         MsgBox("EMPLEADO ELIMINADO CON EXITO")
                                         'AÑADIR LOS CAMPOS QUE FALTAN'
-                                        comboeliminar.SelectedText = ""
+                                        comboeliminar.Text = ""
                                     End If
                                 End If
                             End If
@@ -324,6 +329,8 @@
         btnRP.Enabled = False
         btnBajaTP.Enabled = False
         btnEEmp.Enabled = False
+        combotemporal.Text = ""
+
     End Sub
 
     Private Sub btnre2_Click(sender As Object, e As EventArgs) Handles btnre2.Click
@@ -376,7 +383,7 @@
                                         MsgBox("EL DEPARTAMENTO AL QUE PERTENECE ESTE USUARIO NO ESTA PERMITIDO PARA REALIZAR ESTE TIPO DE OPERACION")
                                     Else
                                         MsgBox("EMPLEADO DADO DE BAJA TEMPORALMENTE")
-                                        combotemporal.SelectedText = ""
+                                        combotemporal.Text = ""
                                         'AÑADIR LOS CAMPOS QUE FALTAN'
                                     End If
                                 End If
@@ -406,12 +413,13 @@
         btnRP.Enabled = False
         btnBajaTP.Enabled = False
         btnEEmp.Enabled = False
+        comboeliminar.Text = ""
     End Sub
 
     Private Sub btnModP_Click(sender As Object, e As EventArgs) Handles btnModP.Click
         Dim frm As New modEmpleados
         If (CVEMP.SelectedItem = 0 Or NOMEMP.Text = "" Or DIREMP.Text = "" Or CORREOEMP.Text = "" Or TELEMP.Text = "" Or EDADEMP.SelectedItem = 0 Or PUESTO.Text = "" Or ACTIVO.Text = "" Or DEPTO.Text = "") Then
-            MsgBox("INGRESA UNA CLAVE")
+            MsgBox("INGRESA UNA CLAVE PARA MODIFICAR UN EMPLEADO")
         Else
             frm.CVEMP.Text = Val(CVEMP.SelectedItem)
             frm.NOMEMP.Text = NOMEMP.Text

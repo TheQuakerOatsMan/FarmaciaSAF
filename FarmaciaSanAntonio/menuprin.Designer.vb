@@ -87,19 +87,19 @@ Partial Class menuprin
         'ALTASToolStripMenuItem
         '
         Me.ALTASToolStripMenuItem.Name = "ALTASToolStripMenuItem"
-        Me.ALTASToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
+        Me.ALTASToolStripMenuItem.Size = New System.Drawing.Size(258, 22)
         Me.ALTASToolStripMenuItem.Text = "ALTAS"
         '
         'CONSULTASToolStripMenuItem
         '
         Me.CONSULTASToolStripMenuItem.Name = "CONSULTASToolStripMenuItem"
-        Me.CONSULTASToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
-        Me.CONSULTASToolStripMenuItem.Text = "CONSULTAS"
+        Me.CONSULTASToolStripMenuItem.Size = New System.Drawing.Size(258, 22)
+        Me.CONSULTASToolStripMenuItem.Text = "CONSULTAS Y OPCIONES DE PROV"
         '
         'CONSULTAGRALToolStripMenuItem
         '
         Me.CONSULTAGRALToolStripMenuItem.Name = "CONSULTAGRALToolStripMenuItem"
-        Me.CONSULTAGRALToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
+        Me.CONSULTAGRALToolStripMenuItem.Size = New System.Drawing.Size(258, 22)
         Me.CONSULTAGRALToolStripMenuItem.Text = "CONSULTA GRAL"
         '
         'EMPLEADOSToolStripMenuItem
@@ -112,25 +112,25 @@ Partial Class menuprin
         'ALTASToolStripMenuItem1
         '
         Me.ALTASToolStripMenuItem1.Name = "ALTASToolStripMenuItem1"
-        Me.ALTASToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.ALTASToolStripMenuItem1.Size = New System.Drawing.Size(252, 22)
         Me.ALTASToolStripMenuItem1.Text = "ALTAS"
         '
         'CONSULTASToolStripMenuItem1
         '
         Me.CONSULTASToolStripMenuItem1.Name = "CONSULTASToolStripMenuItem1"
-        Me.CONSULTASToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
-        Me.CONSULTASToolStripMenuItem1.Text = "CONSULTAS"
+        Me.CONSULTASToolStripMenuItem1.Size = New System.Drawing.Size(252, 22)
+        Me.CONSULTASToolStripMenuItem1.Text = "CONSULTAS Y OPCIONES DE EMP"
         '
         'CONSULTASGRALToolStripMenuItem
         '
         Me.CONSULTASGRALToolStripMenuItem.Name = "CONSULTASGRALToolStripMenuItem"
-        Me.CONSULTASGRALToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.CONSULTASGRALToolStripMenuItem.Text = "CONSULTAS GRAL"
+        Me.CONSULTASGRALToolStripMenuItem.Size = New System.Drawing.Size(252, 22)
+        Me.CONSULTASGRALToolStripMenuItem.Text = "CONSULTA GRAL"
         '
         'MODEMPLEADOSToolStripMenuItem
         '
         Me.MODEMPLEADOSToolStripMenuItem.Name = "MODEMPLEADOSToolStripMenuItem"
-        Me.MODEMPLEADOSToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.MODEMPLEADOSToolStripMenuItem.Size = New System.Drawing.Size(252, 22)
         Me.MODEMPLEADOSToolStripMenuItem.Text = "MOD EMPLEADOS"
         '
         'COMPRASToolStripMenuItem
@@ -143,20 +143,20 @@ Partial Class menuprin
         'AgregarCompraToolStripMenuItem
         '
         Me.AgregarCompraToolStripMenuItem.Name = "AgregarCompraToolStripMenuItem"
-        Me.AgregarCompraToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
-        Me.AgregarCompraToolStripMenuItem.Text = "Agregar Compra"
+        Me.AgregarCompraToolStripMenuItem.Size = New System.Drawing.Size(278, 22)
+        Me.AgregarCompraToolStripMenuItem.Text = "AGREGAR COMPRA"
         '
         'ConsultarComprasToolStripMenuItem
         '
         Me.ConsultarComprasToolStripMenuItem.Name = "ConsultarComprasToolStripMenuItem"
-        Me.ConsultarComprasToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
-        Me.ConsultarComprasToolStripMenuItem.Text = "Consultar Compras"
+        Me.ConsultarComprasToolStripMenuItem.Size = New System.Drawing.Size(278, 22)
+        Me.ConsultarComprasToolStripMenuItem.Text = "CONSULTA Y OPCIONES DE COMPRAS"
         '
         'TodasLasComprasToolStripMenuItem
         '
         Me.TodasLasComprasToolStripMenuItem.Name = "TodasLasComprasToolStripMenuItem"
-        Me.TodasLasComprasToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
-        Me.TodasLasComprasToolStripMenuItem.Text = "Todas las Compras"
+        Me.TodasLasComprasToolStripMenuItem.Size = New System.Drawing.Size(278, 22)
+        Me.TodasLasComprasToolStripMenuItem.Text = "CONSULTA GRAL"
         '
         'PRODUCTOSToolStripMenuItem
         '
@@ -168,20 +168,20 @@ Partial Class menuprin
         'AltasToolStripMenuItem3
         '
         Me.AltasToolStripMenuItem3.Name = "AltasToolStripMenuItem3"
-        Me.AltasToolStripMenuItem3.Size = New System.Drawing.Size(194, 22)
-        Me.AltasToolStripMenuItem3.Text = "Altas"
+        Me.AltasToolStripMenuItem3.Size = New System.Drawing.Size(253, 22)
+        Me.AltasToolStripMenuItem3.Text = "ALTAS"
         '
         'ConsultaDeProdcutosToolStripMenuItem
         '
         Me.ConsultaDeProdcutosToolStripMenuItem.Name = "ConsultaDeProdcutosToolStripMenuItem"
-        Me.ConsultaDeProdcutosToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
-        Me.ConsultaDeProdcutosToolStripMenuItem.Text = "Consulta de Productos"
+        Me.ConsultaDeProdcutosToolStripMenuItem.Size = New System.Drawing.Size(253, 22)
+        Me.ConsultaDeProdcutosToolStripMenuItem.Text = "CONSULTA Y OPCIONES DE PROD"
         '
         'TodosLoProductosToolStripMenuItem
         '
         Me.TodosLoProductosToolStripMenuItem.Name = "TodosLoProductosToolStripMenuItem"
-        Me.TodosLoProductosToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
-        Me.TodosLoProductosToolStripMenuItem.Text = "Todos lo Productos"
+        Me.TodosLoProductosToolStripMenuItem.Size = New System.Drawing.Size(253, 22)
+        Me.TodosLoProductosToolStripMenuItem.Text = "CONSULTA GRAL"
         '
         'CADUCIDADToolStripMenuItem
         '
@@ -206,20 +206,20 @@ Partial Class menuprin
         'AgregarVentaToolStripMenuItem
         '
         Me.AgregarVentaToolStripMenuItem.Name = "AgregarVentaToolStripMenuItem"
-        Me.AgregarVentaToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
-        Me.AgregarVentaToolStripMenuItem.Text = "Agregar Venta"
+        Me.AgregarVentaToolStripMenuItem.Size = New System.Drawing.Size(248, 22)
+        Me.AgregarVentaToolStripMenuItem.Text = "AGEGAR VENTA (ALTAS)"
         '
         'TodasLasVentasToolStripMenuItem
         '
         Me.TodasLasVentasToolStripMenuItem.Name = "TodasLasVentasToolStripMenuItem"
-        Me.TodasLasVentasToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
-        Me.TodasLasVentasToolStripMenuItem.Text = "Consulta ventas"
+        Me.TodasLasVentasToolStripMenuItem.Size = New System.Drawing.Size(248, 22)
+        Me.TodasLasVentasToolStripMenuItem.Text = "CONSULTA Y OPCIONES DE VTAS"
         '
         'TodasLasVentasToolStripMenuItem1
         '
         Me.TodasLasVentasToolStripMenuItem1.Name = "TodasLasVentasToolStripMenuItem1"
-        Me.TodasLasVentasToolStripMenuItem1.Size = New System.Drawing.Size(158, 22)
-        Me.TodasLasVentasToolStripMenuItem1.Text = "Todas las ventas"
+        Me.TodasLasVentasToolStripMenuItem1.Size = New System.Drawing.Size(248, 22)
+        Me.TodasLasVentasToolStripMenuItem1.Text = "CONSULTA GRAL"
         '
         'MEDICAMENTOSToolStripMenuItem
         '
@@ -231,20 +231,20 @@ Partial Class menuprin
         'AltasToolStripMenuItem2
         '
         Me.AltasToolStripMenuItem2.Name = "AltasToolStripMenuItem2"
-        Me.AltasToolStripMenuItem2.Size = New System.Drawing.Size(219, 22)
-        Me.AltasToolStripMenuItem2.Text = "Altas"
+        Me.AltasToolStripMenuItem2.Size = New System.Drawing.Size(247, 22)
+        Me.AltasToolStripMenuItem2.Text = "AGREGAR MED (ALTAS)"
         '
         'ConsultaDeMedicamentosToolStripMenuItem
         '
         Me.ConsultaDeMedicamentosToolStripMenuItem.Name = "ConsultaDeMedicamentosToolStripMenuItem"
-        Me.ConsultaDeMedicamentosToolStripMenuItem.Size = New System.Drawing.Size(219, 22)
-        Me.ConsultaDeMedicamentosToolStripMenuItem.Text = "Consulta de medicamentos"
+        Me.ConsultaDeMedicamentosToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
+        Me.ConsultaDeMedicamentosToolStripMenuItem.Text = "CONSULTA Y OPCIONES DE MED"
         '
         'TodosLosMedicamentosToolStripMenuItem
         '
         Me.TodosLosMedicamentosToolStripMenuItem.Name = "TodosLosMedicamentosToolStripMenuItem"
-        Me.TodosLosMedicamentosToolStripMenuItem.Size = New System.Drawing.Size(219, 22)
-        Me.TodosLosMedicamentosToolStripMenuItem.Text = "Todos los medicamentos"
+        Me.TodosLosMedicamentosToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
+        Me.TodosLosMedicamentosToolStripMenuItem.Text = "CONSULTA GRAL"
         '
         'SALIRToolStripMenuItem
         '

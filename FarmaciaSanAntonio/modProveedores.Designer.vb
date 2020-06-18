@@ -163,7 +163,7 @@ Partial Class modProveedores
         '
         Me.CVEp.FormattingEnabled = True
         Me.CVEp.Location = New System.Drawing.Point(142, 59)
-        Me.CVEp.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.CVEp.Margin = New System.Windows.Forms.Padding(2)
         Me.CVEp.Name = "CVEp"
         Me.CVEp.Size = New System.Drawing.Size(129, 21)
         Me.CVEp.TabIndex = 58
@@ -352,12 +352,12 @@ Partial Class modProveedores
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("MetroDF", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold)
         Me.Label12.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.Label12.Location = New System.Drawing.Point(3, 1)
         Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(323, 21)
+        Me.Label12.Size = New System.Drawing.Size(301, 31)
         Me.Label12.TabIndex = 0
         Me.Label12.Text = "Farmacia San Antonio"
         '
@@ -369,7 +369,7 @@ Partial Class modProveedores
         Me.Panel1.Controls.Add(Me.Label12)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(684, 35)
         Me.Panel1.TabIndex = 90
@@ -388,7 +388,7 @@ Partial Class modProveedores
         Me.Controls.Add(Me.modEGral)
         Me.Controls.Add(Me.PanelEmp)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "modProveedores"
         Me.Text = "Modificación de Proveedores"
         Me.PanelEmp.ResumeLayout(False)

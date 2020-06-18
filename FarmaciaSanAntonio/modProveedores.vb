@@ -150,6 +150,7 @@
             CP.Enabled = False
             LOCALIDAD.Enabled = False
             CORREO.Enabled = False
+            ESTADO.Enabled = False
         End If
         btncan.Enabled = False
         btnApli.Enabled = False

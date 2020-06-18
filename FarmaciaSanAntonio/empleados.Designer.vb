@@ -600,6 +600,7 @@ Partial Class empleados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.FarmaciaSanAntonio.My.Resources.Resources.farmaantonioi2
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(806, 421)
         Me.Controls.Add(Me.Panel1)

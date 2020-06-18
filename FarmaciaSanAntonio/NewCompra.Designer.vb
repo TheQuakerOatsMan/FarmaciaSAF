@@ -25,14 +25,12 @@ Partial Class NewCompra
         Me.components = New System.ComponentModel.Container()
         Me.Medicamentos = New System.Windows.Forms.DataGridView()
         Me.MEDICAMENTOSBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.FarmSAntonioDataSet2 = New FarmaciaSanAntonio.FarmSAntonioDataSet2()
         Me.btnRegMed = New System.Windows.Forms.Button()
         Me.btnAgrMed = New System.Windows.Forms.Button()
         Me.btnAgreProd = New System.Windows.Forms.Button()
         Me.btnRegProd = New System.Windows.Forms.Button()
         Me.Productos = New System.Windows.Forms.DataGridView()
         Me.PRODUCTOSBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.FarmSAntonioDataSet3 = New FarmaciaSanAntonio.FarmSAntonioDataSet3()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.data2 = New System.Windows.Forms.DataGridView()
@@ -52,14 +50,10 @@ Partial Class NewCompra
         Me.Label1 = New System.Windows.Forms.Label()
         Me.cvcomp = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.MEDICAMENTOSTableAdapter = New FarmaciaSanAntonio.FarmSAntonioDataSet2TableAdapters.MEDICAMENTOSTableAdapter()
-        Me.PRODUCTOSTableAdapter = New FarmaciaSanAntonio.FarmSAntonioDataSet3TableAdapters.PRODUCTOSTableAdapter()
         CType(Me.Medicamentos, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MEDICAMENTOSBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.FarmSAntonioDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Productos, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PRODUCTOSBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.FarmSAntonioDataSet3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.data2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.data1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panelTotal.SuspendLayout()
@@ -75,16 +69,6 @@ Partial Class NewCompra
         Me.Medicamentos.RowHeadersWidth = 62
         Me.Medicamentos.Size = New System.Drawing.Size(394, 188)
         Me.Medicamentos.TabIndex = 73
-        '
-        'MEDICAMENTOSBindingSource
-        '
-        Me.MEDICAMENTOSBindingSource.DataMember = "MEDICAMENTOS"
-        Me.MEDICAMENTOSBindingSource.DataSource = Me.FarmSAntonioDataSet2
-        '
-        'FarmSAntonioDataSet2
-        '
-        Me.FarmSAntonioDataSet2.DataSetName = "FarmSAntonioDataSet2"
-        Me.FarmSAntonioDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'btnRegMed
         '
@@ -138,16 +122,6 @@ Partial Class NewCompra
         Me.Productos.RowHeadersWidth = 62
         Me.Productos.Size = New System.Drawing.Size(394, 188)
         Me.Productos.TabIndex = 68
-        '
-        'PRODUCTOSBindingSource
-        '
-        Me.PRODUCTOSBindingSource.DataMember = "PRODUCTOS"
-        Me.PRODUCTOSBindingSource.DataSource = Me.FarmSAntonioDataSet3
-        '
-        'FarmSAntonioDataSet3
-        '
-        Me.FarmSAntonioDataSet3.DataSetName = "FarmSAntonioDataSet3"
-        Me.FarmSAntonioDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'Label9
         '
@@ -326,18 +300,12 @@ Partial Class NewCompra
         Me.Label5.TabIndex = 54
         Me.Label5.Text = "No.Compra (CVECOMP):"
         '
-        'MEDICAMENTOSTableAdapter
-        '
-        Me.MEDICAMENTOSTableAdapter.ClearBeforeFill = True
-        '
-        'PRODUCTOSTableAdapter
-        '
-        Me.PRODUCTOSTableAdapter.ClearBeforeFill = True
-        '
         'NewCompra
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.FarmaciaSanAntonio.My.Resources.Resources.farmaantonioi2
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(712, 389)
         Me.Controls.Add(Me.Medicamentos)
         Me.Controls.Add(Me.btnRegMed)
@@ -359,15 +327,13 @@ Partial Class NewCompra
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.cvcomp)
         Me.Controls.Add(Me.Label5)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "NewCompra"
         Me.Text = "AgregarCompras"
         CType(Me.Medicamentos, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MEDICAMENTOSBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.FarmSAntonioDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Productos, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PRODUCTOSBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.FarmSAntonioDataSet3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.data2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.data1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.panelTotal.ResumeLayout(False)
@@ -402,10 +368,6 @@ Partial Class NewCompra
     Friend WithEvents Label1 As Label
     Friend WithEvents cvcomp As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents FarmSAntonioDataSet2 As FarmSAntonioDataSet2
     Friend WithEvents MEDICAMENTOSBindingSource As BindingSource
-    Friend WithEvents MEDICAMENTOSTableAdapter As FarmSAntonioDataSet2TableAdapters.MEDICAMENTOSTableAdapter
-    Friend WithEvents FarmSAntonioDataSet3 As FarmSAntonioDataSet3
     Friend WithEvents PRODUCTOSBindingSource As BindingSource
-    Friend WithEvents PRODUCTOSTableAdapter As FarmSAntonioDataSet3TableAdapters.PRODUCTOSTableAdapter
 End Class

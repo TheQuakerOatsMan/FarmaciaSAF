@@ -23,29 +23,29 @@ Partial Class Compras_Gnral
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.panDetProd = New System.Windows.Forms.Panel()
+        Me.panGanProd = New System.Windows.Forms.Panel()
+        Me.txtgananprod = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.regfechProd = New System.Windows.Forms.Button()
+        Me.acepFechaProd = New System.Windows.Forms.Button()
+        Me.panFechaProd = New System.Windows.Forms.Panel()
+        Me.timepprod = New System.Windows.Forms.DateTimePicker()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.regprodF = New System.Windows.Forms.Button()
+        Me.acpFechaProd = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.dataDetcompro = New System.Windows.Forms.DataGridView()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.panelEP = New System.Windows.Forms.Panel()
-        Me.panFechaProd = New System.Windows.Forms.Panel()
-        Me.timepprod = New System.Windows.Forms.DateTimePicker()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.regprodF = New System.Windows.Forms.Button()
-        Me.acpFechaProd = New System.Windows.Forms.Button()
-        Me.panGanProd = New System.Windows.Forms.Panel()
-        Me.txtgananprod = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.regfechProd = New System.Windows.Forms.Button()
-        Me.acepFechaProd = New System.Windows.Forms.Button()
-        Me.panelGanMed = New System.Windows.Forms.Panel()
-        Me.txtganancia = New System.Windows.Forms.TextBox()
         Me.panFechaMed = New System.Windows.Forms.Panel()
         Me.timepmed = New System.Windows.Forms.DateTimePicker()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.panelGanMed = New System.Windows.Forms.Panel()
+        Me.txtganancia = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnRegresar = New System.Windows.Forms.Button()
         Me.btnAcep = New System.Windows.Forms.Button()
@@ -75,12 +75,12 @@ Partial Class Compras_Gnral
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.panDetProd.SuspendLayout()
+        Me.panGanProd.SuspendLayout()
+        Me.panFechaProd.SuspendLayout()
         CType(Me.dataDetcompro, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panelEP.SuspendLayout()
-        Me.panFechaProd.SuspendLayout()
-        Me.panGanProd.SuspendLayout()
-        Me.panelGanMed.SuspendLayout()
         Me.panFechaMed.SuspendLayout()
+        Me.panelGanMed.SuspendLayout()
         CType(Me.dataDetComed, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panelET.SuspendLayout()
         Me.panelP.SuspendLayout()
@@ -104,6 +104,112 @@ Partial Class Compras_Gnral
         Me.panDetProd.Size = New System.Drawing.Size(506, 321)
         Me.panDetProd.TabIndex = 78
         Me.panDetProd.Visible = False
+        '
+        'panGanProd
+        '
+        Me.panGanProd.BackColor = System.Drawing.Color.Lavender
+        Me.panGanProd.Controls.Add(Me.txtgananprod)
+        Me.panGanProd.Controls.Add(Me.Label4)
+        Me.panGanProd.Controls.Add(Me.regfechProd)
+        Me.panGanProd.Controls.Add(Me.acepFechaProd)
+        Me.panGanProd.Location = New System.Drawing.Point(109, 90)
+        Me.panGanProd.Name = "panGanProd"
+        Me.panGanProd.Size = New System.Drawing.Size(276, 193)
+        Me.panGanProd.TabIndex = 70
+        Me.panGanProd.Visible = False
+        '
+        'txtgananprod
+        '
+        Me.txtgananprod.Location = New System.Drawing.Point(89, 45)
+        Me.txtgananprod.Name = "txtgananprod"
+        Me.txtgananprod.Size = New System.Drawing.Size(100, 20)
+        Me.txtgananprod.TabIndex = 60
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(86, 25)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(105, 13)
+        Me.Label4.TabIndex = 59
+        Me.Label4.Text = "NUEVA GANANCIA:"
+        '
+        'regfechProd
+        '
+        Me.regfechProd.BackColor = System.Drawing.Color.Navy
+        Me.regfechProd.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.regfechProd.ForeColor = System.Drawing.Color.White
+        Me.regfechProd.Location = New System.Drawing.Point(44, 121)
+        Me.regfechProd.Name = "regfechProd"
+        Me.regfechProd.Size = New System.Drawing.Size(192, 36)
+        Me.regfechProd.TabIndex = 58
+        Me.regfechProd.Text = "REGRESAR"
+        Me.regfechProd.UseVisualStyleBackColor = False
+        '
+        'acepFechaProd
+        '
+        Me.acepFechaProd.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.acepFechaProd.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.acepFechaProd.ForeColor = System.Drawing.Color.Black
+        Me.acepFechaProd.Location = New System.Drawing.Point(44, 79)
+        Me.acepFechaProd.Name = "acepFechaProd"
+        Me.acepFechaProd.Size = New System.Drawing.Size(192, 36)
+        Me.acepFechaProd.TabIndex = 57
+        Me.acepFechaProd.Text = "ACEPTAR"
+        Me.acepFechaProd.UseVisualStyleBackColor = False
+        '
+        'panFechaProd
+        '
+        Me.panFechaProd.BackColor = System.Drawing.Color.Lavender
+        Me.panFechaProd.Controls.Add(Me.timepprod)
+        Me.panFechaProd.Controls.Add(Me.Label7)
+        Me.panFechaProd.Controls.Add(Me.regprodF)
+        Me.panFechaProd.Controls.Add(Me.acpFechaProd)
+        Me.panFechaProd.Location = New System.Drawing.Point(115, 90)
+        Me.panFechaProd.Name = "panFechaProd"
+        Me.panFechaProd.Size = New System.Drawing.Size(276, 193)
+        Me.panFechaProd.TabIndex = 72
+        Me.panFechaProd.Visible = False
+        '
+        'timepprod
+        '
+        Me.timepprod.Location = New System.Drawing.Point(40, 39)
+        Me.timepprod.Name = "timepprod"
+        Me.timepprod.Size = New System.Drawing.Size(200, 20)
+        Me.timepprod.TabIndex = 60
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(44, 23)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(169, 13)
+        Me.Label7.TabIndex = 59
+        Me.Label7.Text = "NUEVA FECHA DE CADUCIDAD:"
+        '
+        'regprodF
+        '
+        Me.regprodF.BackColor = System.Drawing.Color.Navy
+        Me.regprodF.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.regprodF.ForeColor = System.Drawing.Color.White
+        Me.regprodF.Location = New System.Drawing.Point(44, 121)
+        Me.regprodF.Name = "regprodF"
+        Me.regprodF.Size = New System.Drawing.Size(192, 36)
+        Me.regprodF.TabIndex = 58
+        Me.regprodF.Text = "REGRESAR"
+        Me.regprodF.UseVisualStyleBackColor = False
+        '
+        'acpFechaProd
+        '
+        Me.acpFechaProd.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.acpFechaProd.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.acpFechaProd.ForeColor = System.Drawing.Color.Black
+        Me.acpFechaProd.Location = New System.Drawing.Point(44, 79)
+        Me.acpFechaProd.Name = "acpFechaProd"
+        Me.acpFechaProd.Size = New System.Drawing.Size(192, 36)
+        Me.acpFechaProd.TabIndex = 57
+        Me.acpFechaProd.Text = "ACEPTAR"
+        Me.acpFechaProd.UseVisualStyleBackColor = False
         '
         'Button6
         '
@@ -177,132 +283,6 @@ Partial Class Compras_Gnral
         Me.panelEP.TabIndex = 77
         Me.panelEP.Visible = False
         '
-        'panFechaProd
-        '
-        Me.panFechaProd.BackColor = System.Drawing.Color.Lavender
-        Me.panFechaProd.Controls.Add(Me.timepprod)
-        Me.panFechaProd.Controls.Add(Me.Label7)
-        Me.panFechaProd.Controls.Add(Me.regprodF)
-        Me.panFechaProd.Controls.Add(Me.acpFechaProd)
-        Me.panFechaProd.Location = New System.Drawing.Point(115, 90)
-        Me.panFechaProd.Name = "panFechaProd"
-        Me.panFechaProd.Size = New System.Drawing.Size(276, 193)
-        Me.panFechaProd.TabIndex = 72
-        Me.panFechaProd.Visible = False
-        '
-        'timepprod
-        '
-        Me.timepprod.Location = New System.Drawing.Point(40, 39)
-        Me.timepprod.Name = "timepprod"
-        Me.timepprod.Size = New System.Drawing.Size(200, 20)
-        Me.timepprod.TabIndex = 60
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(44, 23)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(169, 13)
-        Me.Label7.TabIndex = 59
-        Me.Label7.Text = "NUEVA FECHA DE CADUCIDAD:"
-        '
-        'regprodF
-        '
-        Me.regprodF.BackColor = System.Drawing.Color.Navy
-        Me.regprodF.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.regprodF.ForeColor = System.Drawing.Color.White
-        Me.regprodF.Location = New System.Drawing.Point(44, 121)
-        Me.regprodF.Name = "regprodF"
-        Me.regprodF.Size = New System.Drawing.Size(192, 36)
-        Me.regprodF.TabIndex = 58
-        Me.regprodF.Text = "REGRESAR"
-        Me.regprodF.UseVisualStyleBackColor = False
-        '
-        'acpFechaProd
-        '
-        Me.acpFechaProd.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.acpFechaProd.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.acpFechaProd.ForeColor = System.Drawing.Color.Black
-        Me.acpFechaProd.Location = New System.Drawing.Point(44, 79)
-        Me.acpFechaProd.Name = "acpFechaProd"
-        Me.acpFechaProd.Size = New System.Drawing.Size(192, 36)
-        Me.acpFechaProd.TabIndex = 57
-        Me.acpFechaProd.Text = "ACEPTAR"
-        Me.acpFechaProd.UseVisualStyleBackColor = False
-        '
-        'panGanProd
-        '
-        Me.panGanProd.BackColor = System.Drawing.Color.Lavender
-        Me.panGanProd.Controls.Add(Me.txtgananprod)
-        Me.panGanProd.Controls.Add(Me.Label4)
-        Me.panGanProd.Controls.Add(Me.regfechProd)
-        Me.panGanProd.Controls.Add(Me.acepFechaProd)
-        Me.panGanProd.Location = New System.Drawing.Point(109, 90)
-        Me.panGanProd.Name = "panGanProd"
-        Me.panGanProd.Size = New System.Drawing.Size(276, 193)
-        Me.panGanProd.TabIndex = 70
-        Me.panGanProd.Visible = False
-        '
-        'txtgananprod
-        '
-        Me.txtgananprod.Location = New System.Drawing.Point(89, 45)
-        Me.txtgananprod.Name = "txtgananprod"
-        Me.txtgananprod.Size = New System.Drawing.Size(100, 20)
-        Me.txtgananprod.TabIndex = 60
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(86, 25)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(105, 13)
-        Me.Label4.TabIndex = 59
-        Me.Label4.Text = "NUEVA GANANCIA:"
-        '
-        'regfechProd
-        '
-        Me.regfechProd.BackColor = System.Drawing.Color.Navy
-        Me.regfechProd.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.regfechProd.ForeColor = System.Drawing.Color.White
-        Me.regfechProd.Location = New System.Drawing.Point(44, 121)
-        Me.regfechProd.Name = "regfechProd"
-        Me.regfechProd.Size = New System.Drawing.Size(192, 36)
-        Me.regfechProd.TabIndex = 58
-        Me.regfechProd.Text = "REGRESAR"
-        Me.regfechProd.UseVisualStyleBackColor = False
-        '
-        'acepFechaProd
-        '
-        Me.acepFechaProd.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.acepFechaProd.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.acepFechaProd.ForeColor = System.Drawing.Color.Black
-        Me.acepFechaProd.Location = New System.Drawing.Point(44, 79)
-        Me.acepFechaProd.Name = "acepFechaProd"
-        Me.acepFechaProd.Size = New System.Drawing.Size(192, 36)
-        Me.acepFechaProd.TabIndex = 57
-        Me.acepFechaProd.Text = "ACEPTAR"
-        Me.acepFechaProd.UseVisualStyleBackColor = False
-        '
-        'panelGanMed
-        '
-        Me.panelGanMed.BackColor = System.Drawing.Color.Lavender
-        Me.panelGanMed.Controls.Add(Me.txtganancia)
-        Me.panelGanMed.Controls.Add(Me.Label3)
-        Me.panelGanMed.Controls.Add(Me.btnRegresar)
-        Me.panelGanMed.Controls.Add(Me.btnAcep)
-        Me.panelGanMed.Location = New System.Drawing.Point(112, 69)
-        Me.panelGanMed.Name = "panelGanMed"
-        Me.panelGanMed.Size = New System.Drawing.Size(276, 193)
-        Me.panelGanMed.TabIndex = 69
-        Me.panelGanMed.Visible = False
-        '
-        'txtganancia
-        '
-        Me.txtganancia.Location = New System.Drawing.Point(89, 45)
-        Me.txtganancia.Name = "txtganancia"
-        Me.txtganancia.Size = New System.Drawing.Size(100, 20)
-        Me.txtganancia.TabIndex = 60
-        '
         'panFechaMed
         '
         Me.panFechaMed.BackColor = System.Drawing.Color.Lavender
@@ -355,6 +335,26 @@ Partial Class Compras_Gnral
         Me.Button3.TabIndex = 57
         Me.Button3.Text = "ACEPTAR"
         Me.Button3.UseVisualStyleBackColor = False
+        '
+        'panelGanMed
+        '
+        Me.panelGanMed.BackColor = System.Drawing.Color.Lavender
+        Me.panelGanMed.Controls.Add(Me.txtganancia)
+        Me.panelGanMed.Controls.Add(Me.Label3)
+        Me.panelGanMed.Controls.Add(Me.btnRegresar)
+        Me.panelGanMed.Controls.Add(Me.btnAcep)
+        Me.panelGanMed.Location = New System.Drawing.Point(112, 69)
+        Me.panelGanMed.Name = "panelGanMed"
+        Me.panelGanMed.Size = New System.Drawing.Size(276, 193)
+        Me.panelGanMed.TabIndex = 69
+        Me.panelGanMed.Visible = False
+        '
+        'txtganancia
+        '
+        Me.txtganancia.Location = New System.Drawing.Point(89, 45)
+        Me.txtganancia.Name = "txtganancia"
+        Me.txtganancia.Size = New System.Drawing.Size(100, 20)
+        Me.txtganancia.TabIndex = 60
         '
         'Label3
         '
@@ -664,6 +664,8 @@ Partial Class Compras_Gnral
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.FarmaciaSanAntonio.My.Resources.Resources.farmaantonio3
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(779, 374)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.panDetProd)
@@ -676,17 +678,17 @@ Partial Class Compras_Gnral
         Me.Text = "Compras"
         Me.panDetProd.ResumeLayout(False)
         Me.panDetProd.PerformLayout()
+        Me.panGanProd.ResumeLayout(False)
+        Me.panGanProd.PerformLayout()
+        Me.panFechaProd.ResumeLayout(False)
+        Me.panFechaProd.PerformLayout()
         CType(Me.dataDetcompro, System.ComponentModel.ISupportInitialize).EndInit()
         Me.panelEP.ResumeLayout(False)
         Me.panelEP.PerformLayout()
-        Me.panFechaProd.ResumeLayout(False)
-        Me.panFechaProd.PerformLayout()
-        Me.panGanProd.ResumeLayout(False)
-        Me.panGanProd.PerformLayout()
-        Me.panelGanMed.ResumeLayout(False)
-        Me.panelGanMed.PerformLayout()
         Me.panFechaMed.ResumeLayout(False)
         Me.panFechaMed.PerformLayout()
+        Me.panelGanMed.ResumeLayout(False)
+        Me.panelGanMed.PerformLayout()
         CType(Me.dataDetComed, System.ComponentModel.ISupportInitialize).EndInit()
         Me.panelET.ResumeLayout(False)
         Me.panelET.PerformLayout()

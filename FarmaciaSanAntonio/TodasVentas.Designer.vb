@@ -24,20 +24,10 @@ Partial Class TodasVentas
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.VENTASBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.FarmSAntonioVentasDataSet = New FarmaciaSanAntonio.FarmSAntonioVentasDataSet()
-        Me.VENTASBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.FarmSAntonioDataSet9 = New FarmaciaSanAntonio.FarmSAntonioDataSet9()
-        Me.VENTASTableAdapter = New FarmaciaSanAntonio.FarmSAntonioDataSet9TableAdapters.VENTASTableAdapter()
         Me.salirvent = New System.Windows.Forms.Button()
-        Me.VENTASTableAdapter1 = New FarmaciaSanAntonio.FarmSAntonioVentasDataSetTableAdapters.VENTASTableAdapter()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.VENTASBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.FarmSAntonioVentasDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.VENTASBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.FarmSAntonioDataSet9, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -52,29 +42,6 @@ Partial Class TodasVentas
         Me.DataGridView1.Size = New System.Drawing.Size(1176, 534)
         Me.DataGridView1.TabIndex = 0
         '
-        'VENTASBindingSource1
-        '
-        Me.VENTASBindingSource1.DataMember = "VENTAS"
-        Me.VENTASBindingSource1.DataSource = Me.FarmSAntonioVentasDataSet
-        '
-        'FarmSAntonioVentasDataSet
-        '
-        Me.FarmSAntonioVentasDataSet.DataSetName = "FarmSAntonioVentasDataSet"
-        Me.FarmSAntonioVentasDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'VENTASBindingSource
-        '
-        Me.VENTASBindingSource.DataMember = "VENTAS"
-        Me.VENTASBindingSource.DataSource = Me.FarmSAntonioDataSet9
-        '
-        'FarmSAntonioDataSet9
-        '
-        Me.FarmSAntonioDataSet9.DataSetName = "FarmSAntonioDataSet9"
-        Me.FarmSAntonioDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'VENTASTableAdapter
-        '
-        Me.VENTASTableAdapter.ClearBeforeFill = True
         '
         'salirvent
         '
@@ -90,8 +57,6 @@ Partial Class TodasVentas
         Me.salirvent.UseVisualStyleBackColor = False
         '
         'VENTASTableAdapter1
-        '
-        Me.VENTASTableAdapter1.ClearBeforeFill = True
         '
         'Panel1
         '
@@ -128,10 +93,6 @@ Partial Class TodasVentas
         Me.Name = "TodasVentas"
         Me.Text = "TodasVentas"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.VENTASBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.FarmSAntonioVentasDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.VENTASBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.FarmSAntonioDataSet9, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
@@ -139,13 +100,9 @@ Partial Class TodasVentas
     End Sub
 
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents FarmSAntonioDataSet9 As FarmSAntonioDataSet9
-    Friend WithEvents VENTASBindingSource As BindingSource
-    Friend WithEvents VENTASTableAdapter As FarmSAntonioDataSet9TableAdapters.VENTASTableAdapter
+
     Friend WithEvents salirvent As Button
-    Friend WithEvents FarmSAntonioVentasDataSet As FarmSAntonioVentasDataSet
-    Friend WithEvents VENTASBindingSource1 As BindingSource
-    Friend WithEvents VENTASTableAdapter1 As FarmSAntonioVentasDataSetTableAdapters.VENTASTableAdapter
+
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label9 As Label
 End Class

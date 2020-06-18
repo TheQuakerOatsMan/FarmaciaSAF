@@ -24,25 +24,10 @@ Partial Class TodosMed
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.MEDICAMENTOSBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DECOMPRASGERENCIA = New FarmaciaSanAntonio.DECOMPRASGERENCIA()
-        Me.MEDICAMENTOSBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.FarmSAntonioDataSet10 = New FarmaciaSanAntonio.FarmSAntonioDataSet10()
-        Me.MEDICAMENTOSTableAdapter = New FarmaciaSanAntonio.FarmSAntonioDataSet10TableAdapters.MEDICAMENTOSTableAdapter()
         Me.salirmedt = New System.Windows.Forms.Button()
-        Me.DEVENTAS = New FarmaciaSanAntonio.DEVENTAS()
-        Me.MEDICAMENTOSBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.MEDICAMENTOSTableAdapter1 = New FarmaciaSanAntonio.DEVENTASTableAdapters.MEDICAMENTOSTableAdapter()
-        Me.MEDICAMENTOSTableAdapter2 = New FarmaciaSanAntonio.DECOMPRASGERENCIATableAdapters.MEDICAMENTOSTableAdapter()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MEDICAMENTOSBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DECOMPRASGERENCIA, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MEDICAMENTOSBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.FarmSAntonioDataSet10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DEVENTAS, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MEDICAMENTOSBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -57,29 +42,7 @@ Partial Class TodosMed
         Me.DataGridView1.Size = New System.Drawing.Size(1176, 534)
         Me.DataGridView1.TabIndex = 0
         '
-        'MEDICAMENTOSBindingSource2
-        '
-        Me.MEDICAMENTOSBindingSource2.DataMember = "MEDICAMENTOS"
-        Me.MEDICAMENTOSBindingSource2.DataSource = Me.DECOMPRASGERENCIA
-        '
-        'DECOMPRASGERENCIA
-        '
-        Me.DECOMPRASGERENCIA.DataSetName = "DECOMPRASGERENCIA"
-        Me.DECOMPRASGERENCIA.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'MEDICAMENTOSBindingSource
-        '
-        Me.MEDICAMENTOSBindingSource.DataMember = "MEDICAMENTOS"
-        Me.MEDICAMENTOSBindingSource.DataSource = Me.FarmSAntonioDataSet10
-        '
-        'FarmSAntonioDataSet10
-        '
-        Me.FarmSAntonioDataSet10.DataSetName = "FarmSAntonioDataSet10"
-        Me.FarmSAntonioDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'MEDICAMENTOSTableAdapter
-        '
-        Me.MEDICAMENTOSTableAdapter.ClearBeforeFill = True
+
         '
         'salirmedt
         '
@@ -95,22 +58,7 @@ Partial Class TodosMed
         Me.salirmedt.UseVisualStyleBackColor = False
         '
         'DEVENTAS
-        '
-        Me.DEVENTAS.DataSetName = "DEVENTAS"
-        Me.DEVENTAS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'MEDICAMENTOSBindingSource1
-        '
-        Me.MEDICAMENTOSBindingSource1.DataMember = "MEDICAMENTOS"
-        Me.MEDICAMENTOSBindingSource1.DataSource = Me.DEVENTAS
-        '
-        'MEDICAMENTOSTableAdapter1
-        '
-        Me.MEDICAMENTOSTableAdapter1.ClearBeforeFill = True
-        '
-        'MEDICAMENTOSTableAdapter2
-        '
-        Me.MEDICAMENTOSTableAdapter2.ClearBeforeFill = True
+
         '
         'Label9
         '
@@ -147,12 +95,6 @@ Partial Class TodosMed
         Me.Name = "TodosMed"
         Me.Text = "TodosMed"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MEDICAMENTOSBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DECOMPRASGERENCIA, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MEDICAMENTOSBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.FarmSAntonioDataSet10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DEVENTAS, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MEDICAMENTOSBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
@@ -160,16 +102,7 @@ Partial Class TodosMed
     End Sub
 
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents FarmSAntonioDataSet10 As FarmSAntonioDataSet10
-    Friend WithEvents MEDICAMENTOSBindingSource As BindingSource
-    Friend WithEvents MEDICAMENTOSTableAdapter As FarmSAntonioDataSet10TableAdapters.MEDICAMENTOSTableAdapter
     Friend WithEvents salirmedt As Button
-    Friend WithEvents DEVENTAS As DEVENTAS
-    Friend WithEvents MEDICAMENTOSBindingSource1 As BindingSource
-    Friend WithEvents MEDICAMENTOSTableAdapter1 As DEVENTASTableAdapters.MEDICAMENTOSTableAdapter
-    Friend WithEvents DECOMPRASGERENCIA As DECOMPRASGERENCIA
-    Friend WithEvents MEDICAMENTOSBindingSource2 As BindingSource
-    Friend WithEvents MEDICAMENTOSTableAdapter2 As DECOMPRASGERENCIATableAdapters.MEDICAMENTOSTableAdapter
     Friend WithEvents Label9 As Label
     Friend WithEvents Panel1 As Panel
 End Class

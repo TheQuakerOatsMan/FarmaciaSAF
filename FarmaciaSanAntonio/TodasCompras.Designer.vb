@@ -24,20 +24,10 @@ Partial Class TodasCompras
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.COMPRASBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.FarmSAntonioComprasDataSet = New FarmaciaSanAntonio.FarmSAntonioComprasDataSet()
         Me.salircomt = New System.Windows.Forms.Button()
-        Me.COMPRASBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.FarmSAntonioDataSet11 = New FarmaciaSanAntonio.FarmSAntonioDataSet11()
-        Me.COMPRASTableAdapter = New FarmaciaSanAntonio.FarmSAntonioDataSet11TableAdapters.COMPRASTableAdapter()
-        Me.COMPRASTableAdapter1 = New FarmaciaSanAntonio.FarmSAntonioComprasDataSetTableAdapters.COMPRASTableAdapter()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.COMPRASBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.FarmSAntonioComprasDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.COMPRASBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.FarmSAntonioDataSet11, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -54,13 +44,6 @@ Partial Class TodasCompras
         '
         'COMPRASBindingSource1
         '
-        Me.COMPRASBindingSource1.DataMember = "COMPRAS"
-        Me.COMPRASBindingSource1.DataSource = Me.FarmSAntonioComprasDataSet
-        '
-        'FarmSAntonioComprasDataSet
-        '
-        Me.FarmSAntonioComprasDataSet.DataSetName = "FarmSAntonioComprasDataSet"
-        Me.FarmSAntonioComprasDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'salircomt
         '
@@ -75,23 +58,6 @@ Partial Class TodasCompras
         Me.salircomt.Text = "SALIR"
         Me.salircomt.UseVisualStyleBackColor = False
         '
-        'COMPRASBindingSource
-        '
-        Me.COMPRASBindingSource.DataMember = "COMPRAS"
-        Me.COMPRASBindingSource.DataSource = Me.FarmSAntonioDataSet11
-        '
-        'FarmSAntonioDataSet11
-        '
-        Me.FarmSAntonioDataSet11.DataSetName = "FarmSAntonioDataSet11"
-        Me.FarmSAntonioDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'COMPRASTableAdapter
-        '
-        Me.COMPRASTableAdapter.ClearBeforeFill = True
-        '
-        'COMPRASTableAdapter1
-        '
-        Me.COMPRASTableAdapter1.ClearBeforeFill = True
         '
         'Label9
         '
@@ -128,10 +94,6 @@ Partial Class TodasCompras
         Me.Name = "TodasCompras"
         Me.Text = "TodasCompras"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.COMPRASBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.FarmSAntonioComprasDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.COMPRASBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.FarmSAntonioDataSet11, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
@@ -139,13 +101,8 @@ Partial Class TodasCompras
     End Sub
 
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents FarmSAntonioDataSet11 As FarmSAntonioDataSet11
-    Friend WithEvents COMPRASBindingSource As BindingSource
-    Friend WithEvents COMPRASTableAdapter As FarmSAntonioDataSet11TableAdapters.COMPRASTableAdapter
     Friend WithEvents salircomt As Button
-    Friend WithEvents FarmSAntonioComprasDataSet As FarmSAntonioComprasDataSet
-    Friend WithEvents COMPRASBindingSource1 As BindingSource
-    Friend WithEvents COMPRASTableAdapter1 As FarmSAntonioComprasDataSetTableAdapters.COMPRASTableAdapter
+
     Friend WithEvents Label9 As Label
     Friend WithEvents Panel1 As Panel
 End Class

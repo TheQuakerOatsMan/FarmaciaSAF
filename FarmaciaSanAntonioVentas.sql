@@ -1,5 +1,5 @@
 ﻿/*+++++++++++++++++++++++ FARMACIA SAN ANTONIO FRAGMENTO DE VENTAS +++++++++++++++++++++++++++++++++++++++++++++++*/
-finalizasesion 'EL PODER x',0
+finalizasesion 'EL PODER X',0
 finalizasesion 'vanila',0
 SELECT * FROM DETCOMPRV
 SELECT * FROM COMPRAS

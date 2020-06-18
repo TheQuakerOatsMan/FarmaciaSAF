@@ -41,10 +41,9 @@ Partial Class MODIMGRECT
         '
         Me.btnre1.BackColor = System.Drawing.Color.Navy
         Me.btnre1.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.btnre1.Location = New System.Drawing.Point(463, 199)
-        Me.btnre1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnre1.Location = New System.Drawing.Point(309, 129)
         Me.btnre1.Name = "btnre1"
-        Me.btnre1.Size = New System.Drawing.Size(186, 48)
+        Me.btnre1.Size = New System.Drawing.Size(124, 31)
         Me.btnre1.TabIndex = 0
         Me.btnre1.Text = "REGRESAR"
         Me.btnre1.UseVisualStyleBackColor = False
@@ -52,10 +51,9 @@ Partial Class MODIMGRECT
         'btnchange
         '
         Me.btnchange.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.btnchange.Location = New System.Drawing.Point(234, 199)
-        Me.btnchange.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnchange.Location = New System.Drawing.Point(156, 129)
         Me.btnchange.Name = "btnchange"
-        Me.btnchange.Size = New System.Drawing.Size(186, 48)
+        Me.btnchange.Size = New System.Drawing.Size(124, 31)
         Me.btnchange.TabIndex = 2
         Me.btnchange.Text = "MODIFICAR RECETA"
         Me.btnchange.UseVisualStyleBackColor = False
@@ -63,65 +61,58 @@ Partial Class MODIMGRECT
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(13, 134)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(9, 87)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(83, 20)
+        Me.Label1.Size = New System.Drawing.Size(56, 13)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "IMGRECT"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(13, 64)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(9, 42)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(82, 20)
+        Me.Label2.Size = New System.Drawing.Size(55, 13)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "CVEMED:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(13, 98)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(9, 64)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(77, 20)
+        Me.Label3.Size = New System.Drawing.Size(52, 13)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "CVEVTA:"
         '
         'txtcvemed
         '
-        Me.txtcvemed.Location = New System.Drawing.Point(131, 61)
-        Me.txtcvemed.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txtcvemed.Location = New System.Drawing.Point(87, 40)
         Me.txtcvemed.Name = "txtcvemed"
-        Me.txtcvemed.Size = New System.Drawing.Size(122, 26)
+        Me.txtcvemed.Size = New System.Drawing.Size(83, 20)
         Me.txtcvemed.TabIndex = 7
         '
         'txtcvevta
         '
-        Me.txtcvevta.Location = New System.Drawing.Point(131, 95)
-        Me.txtcvevta.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txtcvevta.Location = New System.Drawing.Point(87, 62)
         Me.txtcvevta.Name = "txtcvevta"
-        Me.txtcvevta.Size = New System.Drawing.Size(122, 26)
+        Me.txtcvevta.Size = New System.Drawing.Size(83, 20)
         Me.txtcvevta.TabIndex = 8
         '
         'txtimgrect
         '
-        Me.txtimgrect.Location = New System.Drawing.Point(131, 131)
-        Me.txtimgrect.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txtimgrect.Location = New System.Drawing.Point(87, 85)
         Me.txtimgrect.MaxLength = 100
         Me.txtimgrect.Name = "txtimgrect"
-        Me.txtimgrect.Size = New System.Drawing.Size(592, 26)
+        Me.txtimgrect.Size = New System.Drawing.Size(396, 20)
         Me.txtimgrect.TabIndex = 9
         '
         'change
         '
         Me.change.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.change.Location = New System.Drawing.Point(731, 120)
-        Me.change.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.change.Location = New System.Drawing.Point(487, 78)
         Me.change.Name = "change"
-        Me.change.Size = New System.Drawing.Size(186, 48)
+        Me.change.Size = New System.Drawing.Size(124, 31)
         Me.change.TabIndex = 10
         Me.change.Text = "CAMBIAR"
         Me.change.UseVisualStyleBackColor = False
@@ -138,8 +129,9 @@ Partial Class MODIMGRECT
         Me.Panel1.Controls.Add(Me.Label9)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(935, 52)
+        Me.Panel1.Size = New System.Drawing.Size(623, 35)
         Me.Panel1.TabIndex = 84
         '
         'Label9
@@ -147,17 +139,19 @@ Partial Class MODIMGRECT
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label9.Location = New System.Drawing.Point(5, 1)
+        Me.Label9.Location = New System.Drawing.Point(3, 1)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(436, 46)
+        Me.Label9.Size = New System.Drawing.Size(301, 31)
         Me.Label9.TabIndex = 0
         Me.Label9.Text = "Farmacia San Antonio"
         '
         'MODIMGRECT
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(935, 299)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.ClientSize = New System.Drawing.Size(623, 194)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.change)
         Me.Controls.Add(Me.txtimgrect)
@@ -169,7 +163,6 @@ Partial Class MODIMGRECT
         Me.Controls.Add(Me.btnchange)
         Me.Controls.Add(Me.btnre1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "MODIMGRECT"
         Me.Text = "MODIMGRECT"
         Me.Panel1.ResumeLayout(False)

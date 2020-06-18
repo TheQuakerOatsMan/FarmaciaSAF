@@ -73,6 +73,9 @@
         btnModP.Enabled = False
         btnBajaTP.Enabled = False
         btnRP.Enabled = False
+        CVEPROD.Enabled = False
+        btnConsultaP.Enabled = False
+        comboeliminar.Text = ""
     End Sub
 
     Private Sub btnInsP_Click(sender As Object, e As EventArgs) Handles btnInsP.Click
@@ -136,6 +139,9 @@
         btnModP.Enabled = False
         btnBajaTP.Enabled = False
         btnRP.Enabled = False
+        CVEPROD.Enabled = False
+        btnConsultaP.Enabled = False
+        combomod.Text = ""
     End Sub
 
     Private Sub btnBajaTP_Click(sender As Object, e As EventArgs) Handles btnBajaTP.Click
@@ -144,6 +150,9 @@
         btnModP.Enabled = False
         btnBajaTP.Enabled = False
         btnRP.Enabled = False
+        CVEPROD.Enabled = False
+        btnConsultaP.Enabled = False
+        combotemporal.Text = ""
     End Sub
 
     Private Sub btnRP_Click(sender As Object, e As EventArgs) Handles btnRP.Click
@@ -152,6 +161,10 @@
         btnModP.Enabled = False
         btnBajaTP.Enabled = False
         btnRP.Enabled = False
+        CVEPROD.Enabled = False
+        btnConsultaP.Enabled = False
+        comboreac.Text = ""
+
     End Sub
 
     Private Sub btnre4_Click(sender As Object, e As EventArgs) Handles btnre4.Click
@@ -160,6 +173,8 @@
         btnModP.Enabled = True
         btnBajaTP.Enabled = True
         btnRP.Enabled = True
+        CVEPROD.Enabled = True
+        btnConsultaP.Enabled = True
     End Sub
 
     Private Sub btnre1_Click(sender As Object, e As EventArgs)
@@ -168,6 +183,8 @@
         btnEP.Enabled = True
         btnModP.Enabled = True
         btnRP.Enabled = True
+        CVEPROD.Enabled = True
+        btnConsultaP.Enabled = True
     End Sub
 
     Private Sub btnre2_Click(sender As Object, e As EventArgs) Handles btnre2.Click
@@ -176,6 +193,8 @@
         btnEP.Enabled = True
         btnModP.Enabled = True
         btnRP.Enabled = True
+        CVEPROD.Enabled = True
+        btnConsultaP.Enabled = True
     End Sub
 
     Private Sub btnre3_Click(sender As Object, e As EventArgs) Handles btnre3.Click
@@ -184,6 +203,8 @@
         btnEP.Enabled = True
         btnModP.Enabled = True
         btnRP.Enabled = True
+        CVEPROD.Enabled = True
+        btnConsultaP.Enabled = True
     End Sub
 
     Private Sub btnBajaTempP_Click(sender As Object, e As EventArgs) Handles btnBajaTempP.Click
@@ -223,7 +244,7 @@
                                     MsgBox("SESION NO INICIADA, INICIE UNA SESION PARA CONTINUAR")
                                 Else
                                     MsgBox("PRDUCTO DADO DE BAJA")
-                                    combotemporal.SelectedText = ""
+                                    combotemporal.Text = ""
                                     'AÑADIR LOS CAMPOS QUE FALTAN'
                                 End If
                             End If
@@ -278,7 +299,7 @@
                                         Else
                                             MsgBox("PRODUCTO ELIMINADO CON EXITO")
                                             'AÑADIR LOS CAMPOS QUE FALTAN'
-                                            comboeliminar.SelectedText = ""
+                                            comboeliminar.Text = ""
                                         End If
                                     End If
                                 End If
@@ -327,7 +348,7 @@
                                     MsgBox("SESION NO INICIADA, INICIE UNA SESION PARA CONTINUAR")
                                 Else
                                     MsgBox("PRODUCTO REACTIVADO")
-                                    comboreac.SelectedText = ""
+                                    comboreac.Text = ""
                                     'AÑADIR LOS CAMPOS QUE FALTAN'
                                 End If
                             End If
@@ -439,4 +460,18 @@
         Close()
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        PanelOPP.Visible = False
+        btnModDP.Enabled = True
+        btnRP.Enabled = True
+        btnBajaTP.Enabled = True
+        btnConsultaP.Enabled = True
+        btnModP.Enabled = True
+        btnEP.Enabled = True
+        CVEPROD.Enabled = True
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+    End Sub
 End Class

@@ -86,10 +86,9 @@ Partial Class Medicamentos_gnral
         Me.btnSalir.BackColor = System.Drawing.Color.Navy
         Me.btnSalir.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSalir.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.btnSalir.Location = New System.Drawing.Point(688, 635)
-        Me.btnSalir.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnSalir.Location = New System.Drawing.Point(591, 413)
         Me.btnSalir.Name = "btnSalir"
-        Me.btnSalir.Size = New System.Drawing.Size(230, 49)
+        Me.btnSalir.Size = New System.Drawing.Size(153, 32)
         Me.btnSalir.TabIndex = 34
         Me.btnSalir.Text = "SALIR"
         Me.btnSalir.UseVisualStyleBackColor = False
@@ -97,10 +96,9 @@ Partial Class Medicamentos_gnral
         'btnModM
         '
         Me.btnModM.BackColor = System.Drawing.Color.LightSteelBlue
-        Me.btnModM.Location = New System.Drawing.Point(432, 577)
-        Me.btnModM.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnModM.Location = New System.Drawing.Point(420, 375)
         Me.btnModM.Name = "btnModM"
-        Me.btnModM.Size = New System.Drawing.Size(232, 49)
+        Me.btnModM.Size = New System.Drawing.Size(155, 32)
         Me.btnModM.TabIndex = 33
         Me.btnModM.Text = "MOD. MEDICAMENTO"
         Me.btnModM.UseVisualStyleBackColor = False
@@ -109,122 +107,109 @@ Partial Class Medicamentos_gnral
         '
         Me.btnConsulta.BackColor = System.Drawing.Color.CornflowerBlue
         Me.btnConsulta.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnConsulta.Location = New System.Drawing.Point(106, 553)
-        Me.btnConsulta.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnConsulta.Location = New System.Drawing.Point(28, 319)
         Me.btnConsulta.Name = "btnConsulta"
-        Me.btnConsulta.Size = New System.Drawing.Size(218, 55)
+        Me.btnConsulta.Size = New System.Drawing.Size(205, 36)
         Me.btnConsulta.TabIndex = 32
         Me.btnConsulta.Text = "CONSULTAR"
         Me.btnConsulta.UseVisualStyleBackColor = False
         '
         'ESTADO
         '
-        Me.ESTADO.Location = New System.Drawing.Point(210, 433)
-        Me.ESTADO.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.ESTADO.Location = New System.Drawing.Point(140, 281)
         Me.ESTADO.Name = "ESTADO"
-        Me.ESTADO.Size = New System.Drawing.Size(190, 26)
+        Me.ESTADO.Size = New System.Drawing.Size(128, 20)
         Me.ESTADO.TabIndex = 31
         '
         'EXISTENCIASM
         '
-        Me.EXISTENCIASM.Location = New System.Drawing.Point(210, 378)
-        Me.EXISTENCIASM.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.EXISTENCIASM.Location = New System.Drawing.Point(140, 246)
         Me.EXISTENCIASM.Name = "EXISTENCIASM"
-        Me.EXISTENCIASM.Size = New System.Drawing.Size(190, 26)
+        Me.EXISTENCIASM.Size = New System.Drawing.Size(128, 20)
         Me.EXISTENCIASM.TabIndex = 30
         '
         'PRECIOVTAM
         '
-        Me.PRECIOVTAM.Location = New System.Drawing.Point(210, 322)
-        Me.PRECIOVTAM.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PRECIOVTAM.Location = New System.Drawing.Point(140, 209)
         Me.PRECIOVTAM.Name = "PRECIOVTAM"
-        Me.PRECIOVTAM.Size = New System.Drawing.Size(190, 26)
+        Me.PRECIOVTAM.Size = New System.Drawing.Size(128, 20)
         Me.PRECIOVTAM.TabIndex = 29
         '
         'DESCRIPCIONM
         '
-        Me.DESCRIPCIONM.Location = New System.Drawing.Point(210, 210)
-        Me.DESCRIPCIONM.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.DESCRIPCIONM.Location = New System.Drawing.Point(140, 136)
         Me.DESCRIPCIONM.MaxLength = 60
         Me.DESCRIPCIONM.Name = "DESCRIPCIONM"
-        Me.DESCRIPCIONM.Size = New System.Drawing.Size(190, 26)
+        Me.DESCRIPCIONM.Size = New System.Drawing.Size(262, 20)
         Me.DESCRIPCIONM.TabIndex = 28
         '
         'NOMED
         '
-        Me.NOMED.Location = New System.Drawing.Point(210, 154)
-        Me.NOMED.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.NOMED.Location = New System.Drawing.Point(140, 100)
         Me.NOMED.MaxLength = 30
         Me.NOMED.Name = "NOMED"
-        Me.NOMED.Size = New System.Drawing.Size(190, 26)
+        Me.NOMED.Size = New System.Drawing.Size(262, 20)
         Me.NOMED.TabIndex = 27
         '
         'CVEMED
         '
         Me.CVEMED.FormattingEnabled = True
-        Me.CVEMED.Location = New System.Drawing.Point(210, 94)
-        Me.CVEMED.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.CVEMED.Location = New System.Drawing.Point(140, 61)
         Me.CVEMED.Name = "CVEMED"
-        Me.CVEMED.Size = New System.Drawing.Size(103, 28)
+        Me.CVEMED.Size = New System.Drawing.Size(70, 21)
         Me.CVEMED.TabIndex = 26
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(38, 438)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Location = New System.Drawing.Point(25, 285)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(160, 20)
+        Me.Label7.Size = New System.Drawing.Size(109, 13)
         Me.Label7.TabIndex = 25
         Me.Label7.Text = "(STATUS) ESTADO: "
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(34, 383)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Location = New System.Drawing.Point(23, 249)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(133, 20)
+        Me.Label6.Size = New System.Drawing.Size(89, 13)
         Me.Label6.TabIndex = 24
         Me.Label6.Text = "EXISTENCIASM:"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(34, 327)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Location = New System.Drawing.Point(23, 213)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(118, 20)
+        Me.Label5.Size = New System.Drawing.Size(80, 13)
         Me.Label5.TabIndex = 23
         Me.Label5.Text = "PRECIOVTAM:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(36, 218)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(24, 142)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(137, 20)
+        Me.Label3.Size = New System.Drawing.Size(92, 13)
         Me.Label3.TabIndex = 22
         Me.Label3.Text = "DESCRIPCIONM:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(34, 158)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(23, 103)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(72, 20)
+        Me.Label2.Size = New System.Drawing.Size(50, 13)
         Me.Label2.TabIndex = 21
         Me.Label2.Text = "NOMED:"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(36, 101)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(24, 66)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(82, 20)
+        Me.Label1.Size = New System.Drawing.Size(55, 13)
         Me.Label1.TabIndex = 20
         Me.Label1.Text = "CVEMED:"
         '
@@ -243,20 +228,18 @@ Partial Class Medicamentos_gnral
         Me.PanelOP.Controls.Add(Me.Label8)
         Me.PanelOP.Controls.Add(Me.txtdesc)
         Me.PanelOP.Controls.Add(Me.Button1)
-        Me.PanelOP.Location = New System.Drawing.Point(432, 59)
-        Me.PanelOP.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PanelOP.Location = New System.Drawing.Point(421, 38)
         Me.PanelOP.Name = "PanelOP"
-        Me.PanelOP.Size = New System.Drawing.Size(488, 446)
+        Me.PanelOP.Size = New System.Drawing.Size(325, 290)
         Me.PanelOP.TabIndex = 19
         Me.PanelOP.Visible = False
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(33, 35)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label12.Location = New System.Drawing.Point(22, 23)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(82, 20)
+        Me.Label12.Size = New System.Drawing.Size(55, 13)
         Me.Label12.TabIndex = 43
         Me.Label12.Text = "CVEMED:"
         '
@@ -264,20 +247,18 @@ Partial Class Medicamentos_gnral
         '
         Me.combomod.DisplayMember = "uno"
         Me.combomod.FormattingEnabled = True
-        Me.combomod.Location = New System.Drawing.Point(38, 60)
-        Me.combomod.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.combomod.Location = New System.Drawing.Point(25, 39)
         Me.combomod.Name = "combomod"
-        Me.combomod.Size = New System.Drawing.Size(103, 28)
+        Me.combomod.Size = New System.Drawing.Size(70, 21)
         Me.combomod.TabIndex = 42
         '
         'btnre1
         '
         Me.btnre1.BackColor = System.Drawing.Color.Navy
         Me.btnre1.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.btnre1.Location = New System.Drawing.Point(236, 362)
-        Me.btnre1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnre1.Location = New System.Drawing.Point(157, 235)
         Me.btnre1.Name = "btnre1"
-        Me.btnre1.Size = New System.Drawing.Size(152, 49)
+        Me.btnre1.Size = New System.Drawing.Size(101, 32)
         Me.btnre1.TabIndex = 42
         Me.btnre1.Text = "REGRESAR"
         Me.btnre1.UseVisualStyleBackColor = False
@@ -286,10 +267,9 @@ Partial Class Medicamentos_gnral
         '
         Me.Button2.BackColor = System.Drawing.Color.Navy
         Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button2.Location = New System.Drawing.Point(38, 362)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button2.Location = New System.Drawing.Point(25, 235)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(146, 49)
+        Me.Button2.Size = New System.Drawing.Size(97, 32)
         Me.Button2.TabIndex = 23
         Me.Button2.Text = "CANCELAR"
         Me.Button2.UseVisualStyleBackColor = False
@@ -297,57 +277,51 @@ Partial Class Medicamentos_gnral
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(33, 100)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label9.Location = New System.Drawing.Point(22, 65)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(206, 20)
+        Me.Label9.Size = New System.Drawing.Size(140, 13)
         Me.Label9.TabIndex = 22
         Me.Label9.Text = "NOMBRE MEDICAMENTO:"
         '
         'btnModD
         '
         Me.btnModD.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.btnModD.Location = New System.Drawing.Point(38, 282)
-        Me.btnModD.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnModD.Location = New System.Drawing.Point(25, 183)
         Me.btnModD.Name = "btnModD"
-        Me.btnModD.Size = New System.Drawing.Size(350, 49)
+        Me.btnModD.Size = New System.Drawing.Size(233, 32)
         Me.btnModD.TabIndex = 17
         Me.btnModD.Text = "MOD. DESCRIPCION"
         Me.btnModD.UseVisualStyleBackColor = False
         '
         'txtnomed
         '
-        Me.txtnomed.Location = New System.Drawing.Point(38, 125)
-        Me.txtnomed.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txtnomed.Location = New System.Drawing.Point(25, 81)
         Me.txtnomed.Name = "txtnomed"
-        Me.txtnomed.Size = New System.Drawing.Size(348, 26)
+        Me.txtnomed.Size = New System.Drawing.Size(233, 20)
         Me.txtnomed.TabIndex = 21
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(33, 220)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Location = New System.Drawing.Point(22, 143)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(137, 20)
+        Me.Label8.Size = New System.Drawing.Size(92, 13)
         Me.Label8.TabIndex = 19
         Me.Label8.Text = "DESCRIPCIONM:"
         '
         'txtdesc
         '
-        Me.txtdesc.Location = New System.Drawing.Point(38, 243)
-        Me.txtdesc.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txtdesc.Location = New System.Drawing.Point(25, 158)
         Me.txtdesc.Name = "txtdesc"
-        Me.txtdesc.Size = New System.Drawing.Size(348, 26)
+        Me.txtdesc.Size = New System.Drawing.Size(233, 20)
         Me.txtdesc.TabIndex = 18
         '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.Button1.Location = New System.Drawing.Point(38, 165)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button1.Location = New System.Drawing.Point(25, 107)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(350, 49)
+        Me.Button1.Size = New System.Drawing.Size(233, 32)
         Me.Button1.TabIndex = 17
         Me.Button1.Text = "MODIFICAR"
         Me.Button1.UseVisualStyleBackColor = False
@@ -355,19 +329,17 @@ Partial Class Medicamentos_gnral
         'combotemporal
         '
         Me.combotemporal.FormattingEnabled = True
-        Me.combotemporal.Location = New System.Drawing.Point(141, 68)
-        Me.combotemporal.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.combotemporal.Location = New System.Drawing.Point(94, 44)
         Me.combotemporal.Name = "combotemporal"
-        Me.combotemporal.Size = New System.Drawing.Size(103, 28)
+        Me.combotemporal.Size = New System.Drawing.Size(70, 21)
         Me.combotemporal.TabIndex = 41
         '
         'btnBajaTemp
         '
         Me.btnBajaTemp.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.btnBajaTemp.Location = New System.Drawing.Point(24, 118)
-        Me.btnBajaTemp.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnBajaTemp.Location = New System.Drawing.Point(16, 77)
         Me.btnBajaTemp.Name = "btnBajaTemp"
-        Me.btnBajaTemp.Size = New System.Drawing.Size(246, 49)
+        Me.btnBajaTemp.Size = New System.Drawing.Size(164, 32)
         Me.btnBajaTemp.TabIndex = 40
         Me.btnBajaTemp.Text = "DAR DE BAJA TEMP"
         Me.btnBajaTemp.UseVisualStyleBackColor = False
@@ -376,38 +348,34 @@ Partial Class Medicamentos_gnral
         '
         Me.comboeliminar.DisplayMember = "uno"
         Me.comboeliminar.FormattingEnabled = True
-        Me.comboeliminar.Location = New System.Drawing.Point(111, 57)
-        Me.comboeliminar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.comboeliminar.Location = New System.Drawing.Point(74, 37)
         Me.comboeliminar.Name = "comboeliminar"
-        Me.comboeliminar.Size = New System.Drawing.Size(103, 28)
+        Me.comboeliminar.Size = New System.Drawing.Size(70, 21)
         Me.comboeliminar.TabIndex = 39
         '
         'ElimMed
         '
         Me.ElimMed.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.ElimMed.Location = New System.Drawing.Point(24, 98)
-        Me.ElimMed.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.ElimMed.Location = New System.Drawing.Point(16, 64)
         Me.ElimMed.Name = "ElimMed"
-        Me.ElimMed.Size = New System.Drawing.Size(246, 49)
+        Me.ElimMed.Size = New System.Drawing.Size(164, 32)
         Me.ElimMed.TabIndex = 38
         Me.ElimMed.Text = "ELIMINAR MEDICAMENTO"
         Me.ElimMed.UseVisualStyleBackColor = False
         '
         'PRECIOCOMPM
         '
-        Me.PRECIOCOMPM.Location = New System.Drawing.Point(210, 266)
-        Me.PRECIOCOMPM.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PRECIOCOMPM.Location = New System.Drawing.Point(140, 173)
         Me.PRECIOCOMPM.Name = "PRECIOCOMPM"
-        Me.PRECIOCOMPM.Size = New System.Drawing.Size(190, 26)
+        Me.PRECIOCOMPM.Size = New System.Drawing.Size(128, 20)
         Me.PRECIOCOMPM.TabIndex = 36
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(36, 275)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(24, 179)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(133, 20)
+        Me.Label4.Size = New System.Drawing.Size(90, 13)
         Me.Label4.TabIndex = 35
         Me.Label4.Text = "PRECIOCOMPM:"
         '
@@ -416,10 +384,9 @@ Partial Class Medicamentos_gnral
         Me.btnEM.BackColor = System.Drawing.Color.Navy
         Me.btnEM.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEM.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.btnEM.Location = New System.Drawing.Point(107, 622)
-        Me.btnEM.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnEM.Location = New System.Drawing.Point(28, 402)
         Me.btnEM.Name = "btnEM"
-        Me.btnEM.Size = New System.Drawing.Size(218, 55)
+        Me.btnEM.Size = New System.Drawing.Size(205, 36)
         Me.btnEM.TabIndex = 37
         Me.btnEM.Text = "ELIMINAR"
         Me.btnEM.UseVisualStyleBackColor = False
@@ -427,10 +394,9 @@ Partial Class Medicamentos_gnral
         'btnBajaTM
         '
         Me.btnBajaTM.BackColor = System.Drawing.Color.LightSteelBlue
-        Me.btnBajaTM.Location = New System.Drawing.Point(688, 577)
-        Me.btnBajaTM.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnBajaTM.Location = New System.Drawing.Point(591, 375)
         Me.btnBajaTM.Name = "btnBajaTM"
-        Me.btnBajaTM.Size = New System.Drawing.Size(232, 49)
+        Me.btnBajaTM.Size = New System.Drawing.Size(155, 32)
         Me.btnBajaTM.TabIndex = 38
         Me.btnBajaTM.Text = "BAJA TEMPORAL"
         Me.btnBajaTM.UseVisualStyleBackColor = False
@@ -439,10 +405,9 @@ Partial Class Medicamentos_gnral
         '
         Me.btnInsM.BackColor = System.Drawing.Color.CornflowerBlue
         Me.btnInsM.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnInsM.Location = New System.Drawing.Point(106, 490)
-        Me.btnInsM.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnInsM.Location = New System.Drawing.Point(28, 361)
         Me.btnInsM.Name = "btnInsM"
-        Me.btnInsM.Size = New System.Drawing.Size(218, 55)
+        Me.btnInsM.Size = New System.Drawing.Size(205, 36)
         Me.btnInsM.TabIndex = 39
         Me.btnInsM.Text = "INSERTAR"
         Me.btnInsM.UseVisualStyleBackColor = False
@@ -458,20 +423,18 @@ Partial Class Medicamentos_gnral
         Me.PanelEM.Controls.Add(Me.Label10)
         Me.PanelEM.Controls.Add(Me.ElimMed)
         Me.PanelEM.Controls.Add(Me.comboeliminar)
-        Me.PanelEM.Location = New System.Drawing.Point(432, 59)
-        Me.PanelEM.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PanelEM.Location = New System.Drawing.Point(421, 38)
         Me.PanelEM.Name = "PanelEM"
-        Me.PanelEM.Size = New System.Drawing.Size(489, 186)
+        Me.PanelEM.Size = New System.Drawing.Size(326, 121)
         Me.PanelEM.TabIndex = 42
         Me.PanelEM.Visible = False
         '
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(20, 62)
-        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label13.Location = New System.Drawing.Point(13, 40)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(82, 20)
+        Me.Label13.Size = New System.Drawing.Size(55, 13)
         Me.Label13.TabIndex = 44
         Me.Label13.Text = "CVEMED:"
         '
@@ -479,10 +442,9 @@ Partial Class Medicamentos_gnral
         '
         Me.btnre2.BackColor = System.Drawing.Color.Navy
         Me.btnre2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.btnre2.Location = New System.Drawing.Point(279, 98)
-        Me.btnre2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnre2.Location = New System.Drawing.Point(186, 64)
         Me.btnre2.Name = "btnre2"
-        Me.btnre2.Size = New System.Drawing.Size(180, 49)
+        Me.btnre2.Size = New System.Drawing.Size(120, 32)
         Me.btnre2.TabIndex = 41
         Me.btnre2.Text = "REGRESAR"
         Me.btnre2.UseVisualStyleBackColor = False
@@ -490,10 +452,9 @@ Partial Class Medicamentos_gnral
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(20, 25)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label10.Location = New System.Drawing.Point(13, 16)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(263, 20)
+        Me.Label10.Size = New System.Drawing.Size(177, 13)
         Me.Label10.TabIndex = 40
         Me.Label10.Text = "ELIMINACION DE MEDICAMENTO"
         '
@@ -507,20 +468,18 @@ Partial Class Medicamentos_gnral
         Me.PanelTM.Controls.Add(Me.combotemporal)
         Me.PanelTM.Controls.Add(Me.btnBajaTemp)
         Me.PanelTM.Controls.Add(Me.Label11)
-        Me.PanelTM.Location = New System.Drawing.Point(432, 59)
-        Me.PanelTM.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PanelTM.Location = New System.Drawing.Point(421, 38)
         Me.PanelTM.Name = "PanelTM"
-        Me.PanelTM.Size = New System.Drawing.Size(489, 185)
+        Me.PanelTM.Size = New System.Drawing.Size(326, 120)
         Me.PanelTM.TabIndex = 43
         Me.PanelTM.Visible = False
         '
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(50, 72)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label14.Location = New System.Drawing.Point(33, 47)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(82, 20)
+        Me.Label14.Size = New System.Drawing.Size(55, 13)
         Me.Label14.TabIndex = 44
         Me.Label14.Text = "CVEMED:"
         '
@@ -528,10 +487,9 @@ Partial Class Medicamentos_gnral
         '
         Me.btnre3.BackColor = System.Drawing.Color.Navy
         Me.btnre3.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.btnre3.Location = New System.Drawing.Point(279, 118)
-        Me.btnre3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnre3.Location = New System.Drawing.Point(186, 77)
         Me.btnre3.Name = "btnre3"
-        Me.btnre3.Size = New System.Drawing.Size(180, 49)
+        Me.btnre3.Size = New System.Drawing.Size(120, 32)
         Me.btnre3.TabIndex = 42
         Me.btnre3.Text = "REGRESAR"
         Me.btnre3.UseVisualStyleBackColor = False
@@ -539,10 +497,9 @@ Partial Class Medicamentos_gnral
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(20, 25)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label11.Location = New System.Drawing.Point(13, 16)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(302, 20)
+        Me.Label11.Size = New System.Drawing.Size(203, 13)
         Me.Label11.TabIndex = 40
         Me.Label11.Text = "BAJA TEMPORAL DE MEDICAMENTOS"
         '
@@ -556,20 +513,18 @@ Partial Class Medicamentos_gnral
         Me.PanelRM.Controls.Add(Me.comboreac)
         Me.PanelRM.Controls.Add(Me.btnReac)
         Me.PanelRM.Controls.Add(Me.Label16)
-        Me.PanelRM.Location = New System.Drawing.Point(432, 59)
-        Me.PanelRM.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PanelRM.Location = New System.Drawing.Point(421, 38)
         Me.PanelRM.Name = "PanelRM"
-        Me.PanelRM.Size = New System.Drawing.Size(489, 185)
+        Me.PanelRM.Size = New System.Drawing.Size(326, 120)
         Me.PanelRM.TabIndex = 44
         Me.PanelRM.Visible = False
         '
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(50, 72)
-        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label15.Location = New System.Drawing.Point(33, 47)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(82, 20)
+        Me.Label15.Size = New System.Drawing.Size(55, 13)
         Me.Label15.TabIndex = 44
         Me.Label15.Text = "CVEMED:"
         '
@@ -577,10 +532,9 @@ Partial Class Medicamentos_gnral
         '
         Me.btnre4.BackColor = System.Drawing.Color.Navy
         Me.btnre4.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.btnre4.Location = New System.Drawing.Point(279, 118)
-        Me.btnre4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnre4.Location = New System.Drawing.Point(186, 77)
         Me.btnre4.Name = "btnre4"
-        Me.btnre4.Size = New System.Drawing.Size(180, 49)
+        Me.btnre4.Size = New System.Drawing.Size(120, 32)
         Me.btnre4.TabIndex = 42
         Me.btnre4.Text = "REGRESAR"
         Me.btnre4.UseVisualStyleBackColor = False
@@ -588,19 +542,17 @@ Partial Class Medicamentos_gnral
         'comboreac
         '
         Me.comboreac.FormattingEnabled = True
-        Me.comboreac.Location = New System.Drawing.Point(141, 68)
-        Me.comboreac.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.comboreac.Location = New System.Drawing.Point(94, 44)
         Me.comboreac.Name = "comboreac"
-        Me.comboreac.Size = New System.Drawing.Size(103, 28)
+        Me.comboreac.Size = New System.Drawing.Size(70, 21)
         Me.comboreac.TabIndex = 41
         '
         'btnReac
         '
         Me.btnReac.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.btnReac.Location = New System.Drawing.Point(24, 118)
-        Me.btnReac.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnReac.Location = New System.Drawing.Point(16, 77)
         Me.btnReac.Name = "btnReac"
-        Me.btnReac.Size = New System.Drawing.Size(246, 49)
+        Me.btnReac.Size = New System.Drawing.Size(164, 32)
         Me.btnReac.TabIndex = 40
         Me.btnReac.Text = "REACTIVAR MEDICAMENTO"
         Me.btnReac.UseVisualStyleBackColor = False
@@ -608,20 +560,18 @@ Partial Class Medicamentos_gnral
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(20, 25)
-        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label16.Location = New System.Drawing.Point(13, 16)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(290, 20)
+        Me.Label16.Size = New System.Drawing.Size(194, 13)
         Me.Label16.TabIndex = 40
         Me.Label16.Text = "REACTIVACION DE MEDICAMENTOS"
         '
         'btnRM
         '
         Me.btnRM.BackColor = System.Drawing.Color.LightSteelBlue
-        Me.btnRM.Location = New System.Drawing.Point(432, 635)
-        Me.btnRM.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnRM.Location = New System.Drawing.Point(420, 413)
         Me.btnRM.Name = "btnRM"
-        Me.btnRM.Size = New System.Drawing.Size(232, 49)
+        Me.btnRM.Size = New System.Drawing.Size(155, 32)
         Me.btnRM.TabIndex = 44
         Me.btnRM.Text = "REAC. MEDICAMENTO"
         Me.btnRM.UseVisualStyleBackColor = False
@@ -634,8 +584,9 @@ Partial Class Medicamentos_gnral
         Me.Panel1.Controls.Add(Me.Label17)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(938, 52)
+        Me.Panel1.Size = New System.Drawing.Size(758, 35)
         Me.Panel1.TabIndex = 84
         '
         'Label17
@@ -643,17 +594,20 @@ Partial Class Medicamentos_gnral
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label17.Location = New System.Drawing.Point(5, 1)
+        Me.Label17.Location = New System.Drawing.Point(3, 1)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(436, 46)
+        Me.Label17.Size = New System.Drawing.Size(301, 31)
         Me.Label17.TabIndex = 0
         Me.Label17.Text = "Farmacia San Antonio"
         '
         'Medicamentos_gnral
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(938, 692)
+        Me.BackgroundImage = Global.FarmaciaSanAntonio.My.Resources.Resources.farmaantonio3
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.ClientSize = New System.Drawing.Size(758, 450)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PanelRM)
         Me.Controls.Add(Me.btnRM)
@@ -681,7 +635,6 @@ Partial Class Medicamentos_gnral
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PanelOP)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Medicamentos_gnral"
         Me.Text = "Medicamentos_gnral"
         Me.PanelOP.ResumeLayout(False)

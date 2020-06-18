@@ -64,7 +64,7 @@ Public Class Ventas_Gnral
                                             MsgBox("EL DEPARTAMENTO AL QUE PERTENECE ESTE USUARIO NO ESTA PERMITIDO PARA REALIZAR ESTE TIPO DE OPERACION")
                                         Else
                                             MsgBox("TIPO DE PAGO ACTUALIZADO")
-
+                                            comboV.Text = ""
                                         End If
                                     End If
                                 End If
@@ -94,9 +94,18 @@ Public Class Ventas_Gnral
                 IVA.Text = FormatCurrency(consulta2.Fields(2).Value)
                 TIPOP.Text = consulta2.Fields(3).Value
                 FECHA.Text = FormatDateTime(consulta2.Fields(4).Value)
-                modV.Enabled = True
-                elimP.Enabled = True
-                elimM.Enabled = True
+                If (tipoPueso = 5 Or tipoPueso = 6) Then
+                    modV.Enabled = True
+                    elimP.Enabled = True
+                    elimM.Enabled = True
+                Else
+                    If tipoPueso = 3 Then
+                        modV.Enabled = False
+                        elimP.Enabled = True
+                        elimM.Enabled = True
+                    End If
+                End If
+
             Else
                 MsgBox("La cve del de la venta esta vacia o no existe")
             End If
@@ -140,65 +149,65 @@ Public Class Ventas_Gnral
         PanelEM.Visible = True
     End Sub
 
-    Private Sub btnre_Click(sender As Object, e As EventArgs) Handles btnre.Click
-        Dim clavemed As Integer
-        Dim clavevta As Integer
-        Dim imgreceta As String
-        If (datadetvm.SelectedRows.Count() > 0) Then
-            clavemed = datadetvm.CurrentRow.Cells(0).Value
-            clavevta = Val(CVEVTA.Text)
-            imgreceta = datadetvm.CurrentRow.Cells(3).Value.ToString
-            ban = New ADODB.Parameter
-            comanV = New ADODB.Command
-            With comanV
-                .CommandText = "BAJADETMED"
-                .CommandType = CommandType.StoredProcedure
-                '.Parameters.Append(.CreateParameter("0", DataTypeEnum.adInteger, ParameterDirectionEnum.adParamInput, , Val(CVEPROV.Text))) ' sirve para un entero decimal o money para el tipo de dato fecha se busca como date y para el tipo de dato money se busca como currency'
-                .Parameters.Append(.CreateParameter("0", DataTypeEnum.adInteger, ParameterDirectionEnum.adParamInput, , clavevta))
-                .Parameters.Append(.CreateParameter("1", DataTypeEnum.adInteger, ParameterDirectionEnum.adParamInput, , clavemed))
-                .Parameters.Append(.CreateParameter("2", DataTypeEnum.adVarChar, ParameterDirectionEnum.adParamInput, 100, imgreceta))
-                .Parameters.Append(.CreateParameter("3", DataTypeEnum.adInteger, ParameterDirectionEnum.adParamInput, , claveUser))
-                .Parameters.Append(.CreateParameter("4", DataTypeEnum.adInteger, ParameterDirectionEnum.adParamOutput, , 0)) 'BANDERA val(nombredelcampo.Text)'
-                .ActiveConnection = conexionv
-                .Execute()
-                ban.Value = .Parameters(4).Value
+    'Private Sub btnre_Click(sender As Object, e As EventArgs) Handles btnre.Click
+    '    Dim clavemed As Integer
+    '    Dim clavevta As Integer
+    '    Dim imgreceta As String
+    '    If (datadetvm.SelectedRows.Count() > 0) Then
+    '        clavemed = datadetvm.CurrentRow.Cells(0).Value
+    '        clavevta = Val(CVEVTA.Text)
+    '        imgreceta = datadetvm.CurrentRow.Cells(3).Value.ToString
+    '        ban = New ADODB.Parameter
+    '        comanV = New ADODB.Command
+    '        With comanV
+    '            .CommandText = "BAJADETMED"
+    '            .CommandType = CommandType.StoredProcedure
+    '            '.Parameters.Append(.CreateParameter("0", DataTypeEnum.adInteger, ParameterDirectionEnum.adParamInput, , Val(CVEPROV.Text))) ' sirve para un entero decimal o money para el tipo de dato fecha se busca como date y para el tipo de dato money se busca como currency'
+    '            .Parameters.Append(.CreateParameter("0", DataTypeEnum.adInteger, ParameterDirectionEnum.adParamInput, , clavevta))
+    '            .Parameters.Append(.CreateParameter("1", DataTypeEnum.adInteger, ParameterDirectionEnum.adParamInput, , clavemed))
+    '            .Parameters.Append(.CreateParameter("2", DataTypeEnum.adVarChar, ParameterDirectionEnum.adParamInput, 100, imgreceta))
+    '            .Parameters.Append(.CreateParameter("3", DataTypeEnum.adInteger, ParameterDirectionEnum.adParamInput, , claveUser))
+    '            .Parameters.Append(.CreateParameter("4", DataTypeEnum.adInteger, ParameterDirectionEnum.adParamOutput, , 0)) 'BANDERA val(nombredelcampo.Text)'
+    '            .ActiveConnection = conexionv
+    '            .Execute()
+    '            ban.Value = .Parameters(4).Value
 
-            End With
-            If ban.Value = 1 Then
-                MsgBox("EL DETALLE NO EXISTE")
-            Else
-                If ban.Value = 3 Then
-                    MsgBox("MEDICAMENTO INEXISTENTE")
-                Else
-                    If ban.Value = 2 Then
-                        MsgBox("SESION NO INICIADA, INICIE UNA SESION PARA CONTINUAR")
-                    Else
-                        If ban.Value = 50 Then
-                            MsgBox("LA CLAVE DEL EMPLEADO NO PUEDE ESTA VACIA ")
-                        Else
-                            If ban.Value = 51 Then
-                                MsgBox("EL USUARIO NO EXISTE")
-                            Else
-                                If ban.Value = 52 Then
-                                    MsgBox("SESION NO INICIADA, INICIE UNA SESION PARA CONTINUAR")
-                                Else
-                                    If ban.Value = 53 Then
-                                        MsgBox("EL DEPARTAMENTO AL QUE PERTENECE ESTE USUARIO NO ESTA PERMITIDO PARA REALIZAR ESTE TIPO DE OPERACION")
-                                    Else
-                                        MsgBox("DETALLE ELIMINADO CON EXITO :D")
-                                        'AÑADIR LOS CAMPOS QUE FALTAN'
-                                        llenar_data()
-                                    End If
-                                End If
-                            End If
-                        End If
-                    End If
-                End If
-            End If
-        Else
-            MessageBox.Show("Debe seleccionar una fila")
-        End If
-    End Sub
+    '        End With
+    '        If ban.Value = 1 Then
+    '            MsgBox("EL DETALLE NO EXISTE")
+    '        Else
+    '            If ban.Value = 3 Then
+    '                MsgBox("MEDICAMENTO INEXISTENTE")
+    '            Else
+    '                If ban.Value = 2 Then
+    '                    MsgBox("SESION NO INICIADA, INICIE UNA SESION PARA CONTINUAR")
+    '                Else
+    '                    If ban.Value = 50 Then
+    '                        MsgBox("LA CLAVE DEL EMPLEADO NO PUEDE ESTA VACIA ")
+    '                    Else
+    '                        If ban.Value = 51 Then
+    '                            MsgBox("EL USUARIO NO EXISTE")
+    '                        Else
+    '                            If ban.Value = 52 Then
+    '                                MsgBox("SESION NO INICIADA, INICIE UNA SESION PARA CONTINUAR")
+    '                            Else
+    '                                If ban.Value = 53 Then
+    '                                    MsgBox("EL DEPARTAMENTO AL QUE PERTENECE ESTE USUARIO NO ESTA PERMITIDO PARA REALIZAR ESTE TIPO DE OPERACION")
+    '                                Else
+    '                                    MsgBox("DETALLE ELIMINADO CON EXITO :D")
+    '                                    'AÑADIR LOS CAMPOS QUE FALTAN'
+    '                                    llenar_data()
+    '                                End If
+    '                            End If
+    '                        End If
+    '                    End If
+    '                End If
+    '            End If
+    '        End If
+    '    Else
+    '        MessageBox.Show("Debe seleccionar una fila")
+    '    End If
+    'End Sub
 
     Private Sub elimP_Click(sender As Object, e As EventArgs) Handles elimP.Click
         llenar_data2()
@@ -211,63 +220,63 @@ Public Class Ventas_Gnral
         panelP.Enabled = True
     End Sub
 
-    Private Sub btnEDP_Click(sender As Object, e As EventArgs) Handles btnEDP.Click
-        Dim claveprod As Integer
-        Dim clavevta As Integer
+    'Private Sub btnEDP_Click(sender As Object, e As EventArgs) Handles btnEDP.Click
+    '    Dim claveprod As Integer
+    '    Dim clavevta As Integer
 
-        If (datavtapro.SelectedRows.Count() > 0) Then
-            claveprod = datavtapro.CurrentRow.Cells(0).Value
-            clavevta = Val(CVEVTA.Text)
-            ban = New ADODB.Parameter
-            comanV = New ADODB.Command
-            With comanV
-                .CommandText = "BAJADETPROD"
-                .CommandType = CommandType.StoredProcedure
-                '.Parameters.Append(.CreateParameter("0", DataTypeEnum.adInteger, ParameterDirectionEnum.adParamInput, , Val(CVEPROV.Text))) ' sirve para un entero decimal o money para el tipo de dato fecha se busca como date y para el tipo de dato money se busca como currency'
-                .Parameters.Append(.CreateParameter("0", DataTypeEnum.adInteger, ParameterDirectionEnum.adParamInput, , clavevta))
-                .Parameters.Append(.CreateParameter("1", DataTypeEnum.adInteger, ParameterDirectionEnum.adParamInput, , claveprod))
-                .Parameters.Append(.CreateParameter("2", DataTypeEnum.adInteger, ParameterDirectionEnum.adParamInput, , claveUser))
-                .Parameters.Append(.CreateParameter("3", DataTypeEnum.adInteger, ParameterDirectionEnum.adParamOutput, , 0)) 'BANDERA val(nombredelcampo.Text)'
-                .ActiveConnection = conexionv
-                .Execute()
-                ban.Value = .Parameters(3).Value
+    '    If (datavtapro.SelectedRows.Count() > 0) Then
+    '        claveprod = datavtapro.CurrentRow.Cells(0).Value
+    '        clavevta = Val(CVEVTA.Text)
+    '        ban = New ADODB.Parameter
+    '        comanV = New ADODB.Command
+    '        With comanV
+    '            .CommandText = "BAJADETPROD"
+    '            .CommandType = CommandType.StoredProcedure
+    '            '.Parameters.Append(.CreateParameter("0", DataTypeEnum.adInteger, ParameterDirectionEnum.adParamInput, , Val(CVEPROV.Text))) ' sirve para un entero decimal o money para el tipo de dato fecha se busca como date y para el tipo de dato money se busca como currency'
+    '            .Parameters.Append(.CreateParameter("0", DataTypeEnum.adInteger, ParameterDirectionEnum.adParamInput, , clavevta))
+    '            .Parameters.Append(.CreateParameter("1", DataTypeEnum.adInteger, ParameterDirectionEnum.adParamInput, , claveprod))
+    '            .Parameters.Append(.CreateParameter("2", DataTypeEnum.adInteger, ParameterDirectionEnum.adParamInput, , claveUser))
+    '            .Parameters.Append(.CreateParameter("3", DataTypeEnum.adInteger, ParameterDirectionEnum.adParamOutput, , 0)) 'BANDERA val(nombredelcampo.Text)'
+    '            .ActiveConnection = conexionv
+    '            .Execute()
+    '            ban.Value = .Parameters(3).Value
 
-            End With
-            If ban.Value = 1 Then
-                MsgBox("EL DETALLE NO EXISTE")
-            Else
-                If ban.Value = 3 Then
-                    MsgBox("PRODUCTO INEXISTENTE")
-                Else
-                    If ban.Value = 2 Then
-                        MsgBox("SESION NO INICIADA, INICIE UNA SESION PARA CONTINUAR")
-                    Else
-                        If ban.Value = 50 Then
-                            MsgBox("LA CLAVE DEL EMPLEADO NO PUEDE ESTA VACIA ")
-                        Else
-                            If ban.Value = 51 Then
-                                MsgBox("EL USUARIO NO EXISTE")
-                            Else
-                                If ban.Value = 52 Then
-                                    MsgBox("SESION NO INICIADA, INICIE UNA SESION PARA CONTINUAR")
-                                Else
-                                    If ban.Value = 53 Then
-                                        MsgBox("EL DEPARTAMENTO AL QUE PERTENECE ESTE USUARIO NO ESTA PERMITIDO PARA REALIZAR ESTE TIPO DE OPERACION")
-                                    Else
-                                        MsgBox("DETALLE ELIMINADO CON EXITO :D")
-                                        'AÑADIR LOS CAMPOS QUE FALTAN'
-                                        llenar_data2()
-                                    End If
-                                End If
-                            End If
-                        End If
-                    End If
-                End If
-            End If
-        Else
-            MessageBox.Show("Debe seleccionar una fila")
-        End If
-    End Sub
+    '        End With
+    '        If ban.Value = 1 Then
+    '            MsgBox("EL DETALLE NO EXISTE")
+    '        Else
+    '            If ban.Value = 3 Then
+    '                MsgBox("PRODUCTO INEXISTENTE")
+    '            Else
+    '                If ban.Value = 2 Then
+    '                    MsgBox("SESION NO INICIADA, INICIE UNA SESION PARA CONTINUAR")
+    '                Else
+    '                    If ban.Value = 50 Then
+    '                        MsgBox("LA CLAVE DEL EMPLEADO NO PUEDE ESTA VACIA ")
+    '                    Else
+    '                        If ban.Value = 51 Then
+    '                            MsgBox("EL USUARIO NO EXISTE")
+    '                        Else
+    '                            If ban.Value = 52 Then
+    '                                MsgBox("SESION NO INICIADA, INICIE UNA SESION PARA CONTINUAR")
+    '                            Else
+    '                                If ban.Value = 53 Then
+    '                                    MsgBox("EL DEPARTAMENTO AL QUE PERTENECE ESTE USUARIO NO ESTA PERMITIDO PARA REALIZAR ESTE TIPO DE OPERACION")
+    '                                Else
+    '                                    MsgBox("DETALLE ELIMINADO CON EXITO :D")
+    '                                    'AÑADIR LOS CAMPOS QUE FALTAN'
+    '                                    llenar_data2()
+    '                                End If
+    '                            End If
+    '                        End If
+    '                    End If
+    '                End If
+    '            End If
+    '        End If
+    '    Else
+    '        MessageBox.Show("Debe seleccionar una fila")
+    '    End If
+    'End Sub
 
     Private Sub btnre16_Click(sender As Object, e As EventArgs) Handles btnre16.Click
         panelET.Visible = False
@@ -313,8 +322,9 @@ Public Class Ventas_Gnral
                                     If ban.Value = 53 Then
                                         MsgBox("EL DEPARTAMENTO AL QUE PERTENECE ESTE USUARIO NO ESTA PERMITIDO PARA REALIZAR ESTE TIPO DE OPERACION")
                                     Else
-                                        MsgBox("VENTA CANCELADA")
+                                        MsgBox("VENTA CANCELADA CON EXITO")
                                         'AÑADIR LOS CAMPOS QUE FALTAN'
+                                        comboventa.Text = ""
                                     End If
                                 End If
                             End If
@@ -328,6 +338,7 @@ Public Class Ventas_Gnral
     Private Sub ELIMINA_Click(sender As Object, e As EventArgs) Handles ELIMINA.Click
         panelP.Enabled = False
         panelET.Visible = True
+        comboventa.Text = ""
     End Sub
 
     Private Sub btnmodImg_Click(sender As Object, e As EventArgs) Handles btnmodImg.Click

@@ -35,7 +35,6 @@ Partial Class Ventas_Gnral
         Me.Label9 = New System.Windows.Forms.Label()
         Me.datadetvm = New System.Windows.Forms.DataGridView()
         Me.btnre2 = New System.Windows.Forms.Button()
-        Me.btnre = New System.Windows.Forms.Button()
         Me.panelP = New System.Windows.Forms.Panel()
         Me.ELIMINA = New System.Windows.Forms.Button()
         Me.modV = New System.Windows.Forms.Button()
@@ -57,7 +56,6 @@ Partial Class Ventas_Gnral
         Me.Label10 = New System.Windows.Forms.Label()
         Me.datavtapro = New System.Windows.Forms.DataGridView()
         Me.btnre11 = New System.Windows.Forms.Button()
-        Me.btnEDP = New System.Windows.Forms.Button()
         Me.panelET = New System.Windows.Forms.Panel()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.btnre16 = New System.Windows.Forms.Button()
@@ -172,8 +170,7 @@ Partial Class Ventas_Gnral
         Me.PanelEM.Controls.Add(Me.Label9)
         Me.PanelEM.Controls.Add(Me.datadetvm)
         Me.PanelEM.Controls.Add(Me.btnre2)
-        Me.PanelEM.Controls.Add(Me.btnre)
-        Me.PanelEM.Location = New System.Drawing.Point(265, 40)
+        Me.PanelEM.Location = New System.Drawing.Point(264, 40)
         Me.PanelEM.Name = "PanelEM"
         Me.PanelEM.Size = New System.Drawing.Size(523, 333)
         Me.PanelEM.TabIndex = 49
@@ -184,7 +181,7 @@ Partial Class Ventas_Gnral
         Me.btnmodImg.BackColor = System.Drawing.Color.CornflowerBlue
         Me.btnmodImg.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnmodImg.ForeColor = System.Drawing.Color.Black
-        Me.btnmodImg.Location = New System.Drawing.Point(31, 285)
+        Me.btnmodImg.Location = New System.Drawing.Point(31, 197)
         Me.btnmodImg.Name = "btnmodImg"
         Me.btnmodImg.Size = New System.Drawing.Size(192, 36)
         Me.btnmodImg.TabIndex = 51
@@ -220,18 +217,6 @@ Partial Class Ventas_Gnral
         Me.btnre2.TabIndex = 48
         Me.btnre2.Text = "REGRESAR"
         Me.btnre2.UseVisualStyleBackColor = False
-        '
-        'btnre
-        '
-        Me.btnre.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.btnre.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnre.ForeColor = System.Drawing.Color.Black
-        Me.btnre.Location = New System.Drawing.Point(31, 201)
-        Me.btnre.Name = "btnre"
-        Me.btnre.Size = New System.Drawing.Size(192, 36)
-        Me.btnre.TabIndex = 47
-        Me.btnre.Text = "ELIMINAR DET."
-        Me.btnre.UseVisualStyleBackColor = False
         '
         'panelP
         '
@@ -418,7 +403,6 @@ Partial Class Ventas_Gnral
         Me.panelEP.Controls.Add(Me.Label10)
         Me.panelEP.Controls.Add(Me.datavtapro)
         Me.panelEP.Controls.Add(Me.btnre11)
-        Me.panelEP.Controls.Add(Me.btnEDP)
         Me.panelEP.Location = New System.Drawing.Point(275, 40)
         Me.panelEP.Name = "panelEP"
         Me.panelEP.Size = New System.Drawing.Size(513, 355)
@@ -440,7 +424,7 @@ Partial Class Ventas_Gnral
         Me.datavtapro.Location = New System.Drawing.Point(31, 35)
         Me.datavtapro.Name = "datavtapro"
         Me.datavtapro.RowHeadersWidth = 62
-        Me.datavtapro.Size = New System.Drawing.Size(481, 150)
+        Me.datavtapro.Size = New System.Drawing.Size(481, 174)
         Me.datavtapro.TabIndex = 49
         '
         'btnre11
@@ -448,24 +432,12 @@ Partial Class Ventas_Gnral
         Me.btnre11.BackColor = System.Drawing.Color.DarkBlue
         Me.btnre11.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnre11.ForeColor = System.Drawing.Color.White
-        Me.btnre11.Location = New System.Drawing.Point(31, 243)
+        Me.btnre11.Location = New System.Drawing.Point(30, 297)
         Me.btnre11.Name = "btnre11"
         Me.btnre11.Size = New System.Drawing.Size(192, 36)
         Me.btnre11.TabIndex = 48
         Me.btnre11.Text = "REGRESAR"
         Me.btnre11.UseVisualStyleBackColor = False
-        '
-        'btnEDP
-        '
-        Me.btnEDP.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.btnEDP.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEDP.ForeColor = System.Drawing.Color.Black
-        Me.btnEDP.Location = New System.Drawing.Point(31, 201)
-        Me.btnEDP.Name = "btnEDP"
-        Me.btnEDP.Size = New System.Drawing.Size(192, 36)
-        Me.btnEDP.TabIndex = 47
-        Me.btnEDP.Text = "ELIMINAR DET."
-        Me.btnEDP.UseVisualStyleBackColor = False
         '
         'panelET
         '
@@ -560,6 +532,8 @@ Partial Class Ventas_Gnral
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.FarmaciaSanAntonio.My.Resources.Resources.farmaantonio3
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 460)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.panelET)
@@ -599,7 +573,6 @@ Partial Class Ventas_Gnral
     Friend WithEvents Label9 As Label
     Friend WithEvents datadetvm As DataGridView
     Friend WithEvents btnre2 As Button
-    Friend WithEvents btnre As Button
     Friend WithEvents panelP As Panel
     Friend WithEvents modV As Button
     Friend WithEvents elimP As Button
@@ -620,7 +593,6 @@ Partial Class Ventas_Gnral
     Friend WithEvents Label10 As Label
     Friend WithEvents datavtapro As DataGridView
     Friend WithEvents btnre11 As Button
-    Friend WithEvents btnEDP As Button
     Friend WithEvents ELIMINA As Button
     Friend WithEvents panelET As Panel
     Friend WithEvents Label12 As Label

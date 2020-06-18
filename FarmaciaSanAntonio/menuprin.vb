@@ -1,34 +1,19 @@
 ﻿Public Class menuprin
     Private Sub menuprin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Login.Close()
+        inicio.Enabled = False 'desabilitamos inicio para que no se salga
         If (depa = "COMPRAS") Then
             VENTASToolStripMenuItem.Visible = False
             EMPLEADOSToolStripMenuItem.Visible = False
             Call DMyP()
-            If (tipoPueso = 4) Then
-                Compras_Gnral.DETALLEMED.Enabled = False
-                Compras_Gnral.elimP.Enabled = False
-                Compras_Gnral.ELIMINA.Enabled = False
-            End If
         End If
         If (depa = "VENTAS") Then
             PROVEEDORESToolStripMenuItem.Visible = False
             COMPRASToolStripMenuItem.Visible = False
             CADUCIDADToolStripMenuItem.Visible = False
             Call DMyP()
-            Ventas_Gnral.btnmodImg.Visible = False
-            Ventas_Gnral.modV.Visible = False
-            Ventas_Gnral.elimM.Visible = False
-            Ventas_Gnral.elimP.Visible = False
-            Ventas_Gnral.ELIMINA.Visible = False
             ALTASToolStripMenuItem1.Visible = False
             MODEMPLEADOSToolStripMenuItem.Visible = False
-            empleados.btninsertar.Enabled = False
-            empleados.btnEEmp.Enabled = False
-            empleados.btnBajaTP.Enabled = False
-            empleados.btnModP.Enabled = False
-            empleados.btnRP.Enabled = False
-
         End If
         If (depa = "GERENCIA") Then
             If (tipoPueso = 5) Then 'ENCARGADO DE TIENDA'
@@ -192,16 +177,19 @@
         empleados.PASS.Enabled = False
         empleados.btninsertar.Enabled = False
         empleados.consultae.Enabled = True
-        empleados.btnModP.Visible = True
-        empleados.btnRP.Visible = True
-        empleados.btnBajaTP.Visible = True
-        empleados.btnEEmp.Visible = True
-        If tipoPueso = 5 Then 'ENCARGADO'
-            empleados.btninsertar.Enabled = False
-            empleados.btnEEmp.Enabled = False
-            empleados.btnBajaTP.Enabled = False
-            empleados.btnModP.Enabled = False
-            empleados.btnRP.Enabled = False
+
+        If tipoPueso = 5 Or tipoPueso = 3 Then 'ENCARGADO o CAJERO(A)'
+            empleados.btnEEmp.Visible = False
+            empleados.btnBajaTP.Visible = False
+            empleados.btnModP.Visible = False
+            empleados.btnRP.Visible = False
+        Else
+            If tipoPueso = 6 Then
+                empleados.btnModP.Enabled = True
+                empleados.btnRP.Enabled = True
+                empleados.btnBajaTP.Enabled = True
+                empleados.btnEEmp.Enabled = True
+            End If
         End If
     End Sub
 
@@ -219,9 +207,18 @@
         Medicamentos_gnral.ESTADO.Enabled = False
         Medicamentos_gnral.EXISTENCIASM.Enabled = False
         Medicamentos_gnral.btnInsM.Enabled = False
-        Medicamentos_gnral.btnConsulta.Enabled = True
-        Medicamentos_gnral.btnEM.Enabled = True
-        Medicamentos_gnral.btnBajaTM.Enabled = True
+
+        If (tipoPueso = 5 Or tipoPueso = 3) Then
+            Call DMyP()
+        Else
+            If tipoPueso = 6 Then
+                Medicamentos_gnral.btnConsulta.Enabled = True
+                Medicamentos_gnral.btnEM.Enabled = True
+                Medicamentos_gnral.btnBajaTM.Enabled = True
+                Medicamentos_gnral.btnModD.Enabled = True
+                Medicamentos_gnral.btnRM.Enabled = True
+            End If
+        End If
     End Sub
 
     Private Sub AltasToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles AltasToolStripMenuItem2.Click
@@ -252,11 +249,17 @@
         ProductosGral.ESTADO.Enabled = False
         ProductosGral.EXISTENCIASP.Enabled = False
         ProductosGral.btnInsP.Enabled = False
-        ProductosGral.btnConsultaP.Enabled = True
-        ProductosGral.btnEP.Enabled = True
-        ProductosGral.btnBajaTP.Enabled = True
-        ProductosGral.btnModP.Enabled = True
-        ProductosGral.btnRP.Enabled = True
+        If (tipoPueso = 5 Or tipoPueso = 3) Then
+            Call DMyP()
+        Else
+            If tipoPueso = 6 Then
+                ProductosGral.btnConsultaP.Enabled = True
+                ProductosGral.btnEP.Enabled = True
+                ProductosGral.btnBajaTP.Enabled = True
+                ProductosGral.btnModP.Enabled = True
+                ProductosGral.btnRP.Enabled = True
+            End If
+        End If
     End Sub
 
     Private Sub AltasToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles AltasToolStripMenuItem3.Click
@@ -286,6 +289,16 @@
         Ventas_Gnral.modV.Enabled = False
         Ventas_Gnral.elimM.Enabled = False
         Ventas_Gnral.elimP.Enabled = False
+        If tipoPueso = 3 Then
+            Ventas_Gnral.ELIMINA.Visible = False
+            Ventas_Gnral.btnmodImg.Visible = False
+        Else
+            If tipoPueso = 6 Or tipoPueso = 5 Then
+                Ventas_Gnral.ELIMINA.Visible = True
+                Ventas_Gnral.btnmodImg.Visible = True
+            End If
+        End If
+
     End Sub
 
     Private Sub AgregarVentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AgregarVentaToolStripMenuItem.Click
@@ -299,91 +312,6 @@
         Else
             MsgBox("La cve del empleado esta vacia o el empleado esta dado de baja")
         End If
-        'ban = New ADODB.Parameter
-        'Dim clave As Integer
-        'clave = 100
-        'comanV = New ADODB.Command
-        'With comanV
-        '    .CommandText = "VTAUTO"
-        '    .CommandType = CommandType.StoredProcedure
-        '    '.Parameters.Append(.CreateParameter("0", DataTypeEnum.adInteger, ParameterDirectionEnum.adParamInput, , Val(CVEPROV.Text))) ' sirve para un entero decimal o money para el tipo de dato fecha se busca como date y para el tipo de dato money se busca como currency'
-        '    .Parameters.Append(.CreateParameter("0", DataTypeEnum.adVarChar, ParameterDirectionEnum.adParamInput, 20, "EFECTIVO")) 'si te fijas puse efectivo por default, paraque pueda corrrer el poc'
-        '    .Parameters.Append(.CreateParameter("1", DataTypeEnum.adInteger, ParameterDirectionEnum.adParamInput, , claveUser))
-        '    .Parameters.Append(.CreateParameter("2", DataTypeEnum.adInteger, ParameterDirectionEnum.adParamOutput, , 0)) 'BANDERA val(nombredelcampo.Text)'
-        '    .ActiveConnection = conexionv
-        '    .Execute()
-        '    ban.Value = .Parameters(2).Value
-
-        'End With
-        'If ban.Value = 1 Then
-        '    MsgBox("EL TIPO DE PAGO NO DEBE DE ESTAR VACIO")
-        'Else
-        '    If ban.Value = 2 Then
-        '        MsgBox("EL TIPO DE PAGO TIENE NUMEROS")
-        '    Else
-        '        If ban.Value = 3 Then
-        '            MsgBox("LA CVE DEL EMPLEADO ESTA VACIA")
-        '        Else
-        '            If ban.Value = 4 Then
-        '                MsgBox("LA CVE DEL EMPLEADO NO EXISTE")
-        '            Else
-        '                If ban.Value = 5 Then
-        '                    MsgBox("ESTE EMPLEADO SE ENCUENTRA DADO DE BAJA")
-        '                Else
-        '                    If ban.Value = 6 Then
-        '                        MsgBox("LAS VENTAS SOLO PUEDEN SER COBRADAs (REALIZADAS) POR LOS CAJEROS, ADMINSITRADORES O ENCARGADOS DE TIENDA")
-        '                    Else
-        '                        If ban.Value = 50 Then
-        '                            MsgBox("LA CLAVE DEL EMPLEADO NO PUEDE ESTA VACIA ")
-        '                        Else
-        '                            If ban.Value = 51 Then
-        '                                MsgBox("EL USUARIO NO EXISTE")
-        '                            Else
-        '                                If ban.Value = 52 Then
-        '                                    MsgBox("SESION NO INICIADA, INICIE UNA SESION PARA CONTINUAR")
-        '                                Else
-        '                                    If ban.Value = 53 Then
-        '                                        MsgBox("EL DEPARTAMENTO AL QUE PERTENECE ESTE USUARIO NO ESTA PERMITIDO PARA REALIZAR ESTE TIPO DE OPERACION")
-        '                                    Else
-
-        '                                        consql = ("select max(cvevta) from ventas")
-        '                                        consultaV = New ADODB.Recordset
-        '                                        consultaV = conexionv.Execute(consql)
-        '                                        If Not consultaV.EOF Then
-        '                                            clave = consultaV.Fields(0).Value
-        '                                        End If
-        '                                        MsgBox("MODULO DE VENTAS")
-        '                                        NewVenta.ctNEmp.Text = Name
-        '                                        NewVenta.ctNEmp.Enabled = False
-        '                                        NewVenta.ctemp.Text = cveemp
-        '                                        NewVenta.ctemp.Enabled = False
-        '                                        NewVenta.ctpag.Enabled = True
-        '                                        NewVenta.cvvta.Text = clave
-        '                                        If depa = "GERENCIA" Then
-        '                                            NewVenta.BTNEREVTA.Visible = False
-        '                                            NewVenta.btnCancel.Visible = True
-        '                                        Else
-        '                                            If depa = "VENTAS" Then
-        '                                                NewVenta.BTNEREVTA.Visible = True
-        '                                                NewVenta.btnCancel.Visible = False
-        '                                            End If
-        '                                        End If
-        '                                        'AGREGUE ESTAS DOS'
-        '                                        NewVenta.tpago = "EFECTIVO" 'este seria el valor por defecto'
-        '                                        NewVenta.ctpag.Text = "EFECTIVO"
-        '                                        clave = 0
-        '                                        NewVenta.Show()
-        '                                        Close()
-        '                                    End If
-        '                                End If
-        '                            End If
-        '                        End If
-        '                    End If
-        '                End If
-        '            End If
-        '        End If
-        '    End If
-        'End If
         NewVenta.ctNEmp.Text = Name
         NewVenta.ctNEmp.Enabled = False
         NewVenta.ctemp.Text = cveemp
@@ -455,6 +383,13 @@
         Compras_Gnral.FECHA.Enabled = False
         Compras_Gnral.DETALLEMED.Enabled = False
         Compras_Gnral.elimP.Enabled = False
+        If (tipoPueso = 4) Then
+            Compras_Gnral.ELIMINA.Visible = False
+            Compras_Gnral.Button1.Visible = False
+            Compras_Gnral.Button8.Visible = False
+            Compras_Gnral.Button6.Visible = False
+            Compras_Gnral.btnEDP.Visible = False
+        End If
     End Sub
 
     Private Sub MEDICAMENTOSToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MEDICAMENTOSToolStripMenuItem.Click

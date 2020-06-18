@@ -24,25 +24,10 @@ Partial Class TodosProd
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.PRODUCTOSBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.FarmSAntonioDataSet8 = New FarmaciaSanAntonio.FarmSAntonioDataSet8()
-        Me.PRODUCTOSTableAdapter = New FarmaciaSanAntonio.FarmSAntonioDataSet8TableAdapters.PRODUCTOSTableAdapter()
         Me.salirprodt = New System.Windows.Forms.Button()
-        Me.DEVENTASP = New FarmaciaSanAntonio.DEVENTASP()
-        Me.PRODUCTOSBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.PRODUCTOSTableAdapter1 = New FarmaciaSanAntonio.DEVENTASPTableAdapters.PRODUCTOSTableAdapter()
-        Me.DECOMPRASP = New FarmaciaSanAntonio.DECOMPRASP()
-        Me.PRODUCTOSBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.PRODUCTOSTableAdapter2 = New FarmaciaSanAntonio.DECOMPRASPTableAdapters.PRODUCTOSTableAdapter()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PRODUCTOSBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.FarmSAntonioDataSet8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DEVENTASP, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PRODUCTOSBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DECOMPRASP, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PRODUCTOSBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -59,18 +44,6 @@ Partial Class TodosProd
         '
         'PRODUCTOSBindingSource
         '
-        Me.PRODUCTOSBindingSource.DataMember = "PRODUCTOS"
-        Me.PRODUCTOSBindingSource.DataSource = Me.FarmSAntonioDataSet8
-        '
-        'FarmSAntonioDataSet8
-        '
-        Me.FarmSAntonioDataSet8.DataSetName = "FarmSAntonioDataSet8"
-        Me.FarmSAntonioDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'PRODUCTOSTableAdapter
-        '
-        Me.PRODUCTOSTableAdapter.ClearBeforeFill = True
-        '
         'salirprodt
         '
         Me.salirprodt.BackColor = System.Drawing.Color.Navy
@@ -85,32 +58,6 @@ Partial Class TodosProd
         Me.salirprodt.UseVisualStyleBackColor = False
         '
         'DEVENTASP
-        '
-        Me.DEVENTASP.DataSetName = "DEVENTASP"
-        Me.DEVENTASP.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'PRODUCTOSBindingSource1
-        '
-        Me.PRODUCTOSBindingSource1.DataMember = "PRODUCTOS"
-        Me.PRODUCTOSBindingSource1.DataSource = Me.DEVENTASP
-        '
-        'PRODUCTOSTableAdapter1
-        '
-        Me.PRODUCTOSTableAdapter1.ClearBeforeFill = True
-        '
-        'DECOMPRASP
-        '
-        Me.DECOMPRASP.DataSetName = "DECOMPRASP"
-        Me.DECOMPRASP.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'PRODUCTOSBindingSource2
-        '
-        Me.PRODUCTOSBindingSource2.DataMember = "PRODUCTOS"
-        Me.PRODUCTOSBindingSource2.DataSource = Me.DECOMPRASP
-        '
-        'PRODUCTOSTableAdapter2
-        '
-        Me.PRODUCTOSTableAdapter2.ClearBeforeFill = True
         '
         'Label9
         '
@@ -147,12 +94,6 @@ Partial Class TodosProd
         Me.Name = "TodosProd"
         Me.Text = "TodosProd"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PRODUCTOSBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.FarmSAntonioDataSet8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DEVENTASP, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PRODUCTOSBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DECOMPRASP, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PRODUCTOSBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
@@ -160,16 +101,7 @@ Partial Class TodosProd
     End Sub
 
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents FarmSAntonioDataSet8 As FarmSAntonioDataSet8
-    Friend WithEvents PRODUCTOSBindingSource As BindingSource
-    Friend WithEvents PRODUCTOSTableAdapter As FarmSAntonioDataSet8TableAdapters.PRODUCTOSTableAdapter
     Friend WithEvents salirprodt As Button
-    Friend WithEvents DEVENTASP As DEVENTASP
-    Friend WithEvents PRODUCTOSBindingSource1 As BindingSource
-    Friend WithEvents PRODUCTOSTableAdapter1 As DEVENTASPTableAdapters.PRODUCTOSTableAdapter
-    Friend WithEvents DECOMPRASP As DECOMPRASP
-    Friend WithEvents PRODUCTOSBindingSource2 As BindingSource
-    Friend WithEvents PRODUCTOSTableAdapter2 As DECOMPRASPTableAdapters.PRODUCTOSTableAdapter
     Friend WithEvents Label9 As Label
     Friend WithEvents Panel1 As Panel
 End Class

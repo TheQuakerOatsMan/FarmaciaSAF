@@ -58,10 +58,17 @@
             If Not consulta2.EOF Then
                 TOTALCOMP.Text = FormatCurrency(consulta2.Fields(1).Value)
                 FECHA.Text = consulta2.Fields(2).Value
-                elimP.Enabled = True
-                DETALLEMED.Enabled = True
+                If (tipoPueso = 6 Or tipoPueso = 5 Or tipoPueso = 7 Or tipoPueso = 8) Then
+                    elimP.Enabled = True
+                    DETALLEMED.Enabled = True
+                Else
+                    If (tipoPueso = 4) Then
+                        elimP.Enabled = True
+                        DETALLEMED.Enabled = True
+                    End If
+                End If
             Else
-                MsgBox("La cve del de la venta esta vacia o no existe")
+                    MsgBox("La cve del de la venta esta vacia o no existe")
             End If
         End If
     End Sub
