@@ -7,6 +7,8 @@ select * from usuarios
 SELECT * FROM EMPLEADOS
 SELECT * FROM VENTAS
 select * from detvtamed
+select * from detvtapro 
+select * from detvtaemp
 SELECT * FROM MEDICAMENTOS
 SELECT * FROM PRODUCTOS
 select cvemp from usuarios where nusuario='EL PODER X' AND contrasena ='1234'

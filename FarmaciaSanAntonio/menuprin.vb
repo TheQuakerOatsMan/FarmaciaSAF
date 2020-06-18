@@ -5,11 +5,15 @@
         If (depa = "COMPRAS") Then
             VENTASToolStripMenuItem.Visible = False
             EMPLEADOSToolStripMenuItem.Visible = False
-            Call DMyP()
             If (tipoPueso = 8) Then
                 ALTASToolStripMenuItem.Visible = False
                 AgregarCompraToolStripMenuItem.Visible = False
+                Call DMyP()
             End If
+            'If (tipoPueso = 4) Then 'mostrador'
+            '    ALTASToolStripMenuItem.Visible = True
+            '    AgregarCompraToolStripMenuItem.Visible = True
+            'End If
         End If
         If (depa = "VENTAS") Then
             PROVEEDORESToolStripMenuItem.Visible = False
@@ -224,10 +228,10 @@
         Medicamentos_gnral.EXISTENCIASM.Enabled = False
         Medicamentos_gnral.btnInsM.Enabled = False
 
-        If (tipoPueso = 5 Or tipoPueso = 3 Or tipoPueso = 7 Or tipoPueso = 8 Or tipoPueso = 4) Then
+        If (tipoPueso = 5 Or tipoPueso = 3 Or tipoPueso = 7 Or tipoPueso = 8) Then
             Call DMyP()
         Else
-            If tipoPueso = 6 Then
+            If tipoPueso = 6 Or tipoPueso = 4 Then
                 Medicamentos_gnral.btnConsulta.Enabled = True
                 Medicamentos_gnral.btnEM.Enabled = True
                 Medicamentos_gnral.btnBajaTM.Enabled = True
@@ -265,10 +269,10 @@
         ProductosGral.ESTADO.Enabled = False
         ProductosGral.EXISTENCIASP.Enabled = False
         ProductosGral.btnInsP.Enabled = False
-        If (tipoPueso = 5 Or tipoPueso = 3 Or tipoPueso = 7 Or tipoPueso = 8 Or tipoPueso = 4) Then
+        If (tipoPueso = 5 Or tipoPueso = 3 Or tipoPueso = 7 Or tipoPueso = 8) Then
             Call DMyP()
         Else
-            If tipoPueso = 6 Then
+            If tipoPueso = 6 Or tipoPueso = 4 Then
                 ProductosGral.btnConsultaP.Enabled = True
                 ProductosGral.btnEP.Enabled = True
                 ProductosGral.btnBajaTP.Enabled = True
